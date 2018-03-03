@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import SnapKit
 
 class SchoolDirectoryVC: UIViewController {
 
+    var schoolDirectory = SchoolDirectoryView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
     }
 
+    private func setupView() {
+        view.addSubview(schoolDirectory)
+        schoolDirectory.snp.makeConstraints { (make) in
+            make.edges.equalTo(view.safeAreaLayoutGuide.snp.edges)
+        }
+    }
 }

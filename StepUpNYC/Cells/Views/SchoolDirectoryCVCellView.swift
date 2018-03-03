@@ -30,10 +30,19 @@ class SchoolDirectoryCVCellView: UIView {
     
     private func setupView() {
         addSubview(schoolImageView)
-        // TODO: setup schoolImageView constraints
+        schoolImageView.snp.makeConstraints { (make) in
+            make.top.equalTo(snp.top)
+            make.width.equalTo(snp.width)
+            make.centerX.equalTo(snp.centerX)
+            make.bottom.equalTo(nameSchoolLabel.snp.top)
+        }
         
         addSubview(nameSchoolLabel)
-        // TODO: setup nameSchoolLabel constraints
+        nameSchoolLabel.snp.makeConstraints { (make) in
+            make.bottom.equalTo(snp.bottom)
+            make.centerX.equalTo(snp.centerX)
+            make.width.equalTo(snp.width)
+        }
         
     }
 }

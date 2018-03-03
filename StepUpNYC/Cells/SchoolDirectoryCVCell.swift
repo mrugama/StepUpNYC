@@ -14,13 +14,12 @@ class SchoolDirectoryCVCell: UICollectionViewCell {
     
     func configCell(school: School) {
         setupView()
-        schoolDirectoCVCellView.nameSchoolLabel.text = school.school_name
     }
     
     private func setupView() {
         addSubview(schoolDirectoCVCellView)
-        // TODO: setup Constraints
-        
+        schoolDirectoCVCellView.snp.makeConstraints { (make) in
+            make.edges.equalTo(snp.edges)
+        }
     }
-
 }
