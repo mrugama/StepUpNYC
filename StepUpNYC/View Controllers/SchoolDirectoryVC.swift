@@ -21,7 +21,7 @@ class SchoolDirectoryVC: UIViewController {
     private func setupView() {
         view.addSubview(schoolDirectory)
         schoolDirectory.snp.makeConstraints { (make) in
-            make.edges.equalTo(view.snp.edges)
+            make.edges.equalTo(self.view.safeAreaLayoutGuide.snp.edges)
         }
     }
 }

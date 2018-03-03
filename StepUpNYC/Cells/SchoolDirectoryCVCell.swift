@@ -14,8 +14,13 @@ class SchoolDirectoryCVCell: UICollectionViewCell {
     
     func configCell(school: School) {
         setupView()
-
         schoolDirectoryCVCellView.nameSchoolLabel.text = school.school_name
+        schoolDirectoryCVCellView.layer.cornerRadius = 15
+        schoolDirectoryCVCellView.backgroundColor = UIColor.white
+    }
+    
+    override func layoutSubviews() {
+        schoolDirectoryCVCellView.setNeedsLayout()
     }
     
     private func setupView() {
@@ -24,10 +29,6 @@ class SchoolDirectoryCVCell: UICollectionViewCell {
         schoolDirectoryCVCellView.snp.makeConstraints { (make) in
             make.edges.equalTo(snp.edges)
         }
-        // TODO: setup Constraints
         
-
-        addSubview(schoolDirectoryCVCellView)
-        // TODO: setup Constraints
     }
 }
