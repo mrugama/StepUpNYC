@@ -11,7 +11,7 @@ import SnapKit
 
 class SchoolDirectoryView: UIView {
 
-    let cellSpacing: CGFloat = 5.0
+    let cellSpacing: CGFloat = 10.0
     var schools = [School]() {
         didSet {
             DispatchQueue.main.async {
@@ -25,7 +25,7 @@ class SchoolDirectoryView: UIView {
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         cv.register(SchoolDirectoryCVCell.self, forCellWithReuseIdentifier: "SchoolCell")
-        cv.backgroundColor = UIColor.black
+        cv.backgroundColor = Color.green
         return cv
     }()
     

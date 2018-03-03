@@ -21,7 +21,7 @@ extension SchoolDirectoryView: UICollectionViewDelegate {
 
 extension SchoolDirectoryView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfCells: CGFloat = 3
+        let numberOfCells: CGFloat = 2
         let numberOfSpaces: CGFloat = numberOfCells + 1
         let width = (collectionView.bounds.width - (numberOfSpaces * cellSpacing)) / numberOfCells
         let height = width

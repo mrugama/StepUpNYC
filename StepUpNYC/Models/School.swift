@@ -25,4 +25,5 @@ struct School: Codable {
     let website: String?
     let zip: String?
     let state_code: String?
+    let bin: String?
 }
