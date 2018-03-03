@@ -37,6 +37,8 @@
 		8149359E204B101F0090B9A3 /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359D204B101F0090B9A3 /* QuestionService.swift */; };
 		814935A0204B10F30090B9A3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359F204B10F30090B9A3 /* AppError.swift */; };
 		814935A2204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */; };
+		FA2201CB204B36F7006A5895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2201CA204B36F7006A5895 /* Answer.swift */; };
+		FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2201CC204B389D006A5895 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SchoolDirectoryView+Delegates.swift"; sourceTree = "<group>"; };
 		82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.release.xcconfig"; sourceTree = "<group>"; };
 		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2201CA204B36F7006A5895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		FA2201CC204B389D006A5895 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 				8149356B204B04B10090B9A3 /* View Controllers */,
 				8149356A204B04A00090B9A3 /* Supporting Files */,
 				81493564204B04870090B9A3 /* Info.plist */,
+				FA2201CC204B389D006A5895 /* GoogleService-Info.plist */,
 			);
 			path = StepUpNYC;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			children = (
 				81493595204B0F9D0090B9A3 /* School.swift */,
 				8149359B204B0FF70090B9A3 /* Question.swift */,
+				FA2201CA204B36F7006A5895 /* Answer.swift */,
 				8149359F204B10F30090B9A3 /* AppError.swift */,
 			);
 			path = Models;
@@ -279,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81493563204B04870090B9A3 /* LaunchScreen.storyboard in Resources */,
+				FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */,
 				81493560204B04870090B9A3 /* Assets.xcassets in Resources */,
 				8149355E204B04870090B9A3 /* Main.storyboard in Resources */,
 			);
@@ -358,6 +365,7 @@
 				8149355B204B04870090B9A3 /* ViewController.swift in Sources */,
 				81493575204B05390090B9A3 /* QuizVC.swift in Sources */,
 				81493577204B05570090B9A3 /* ResourcesVC.swift in Sources */,
+				FA2201CB204B36F7006A5895 /* Answer.swift in Sources */,
 				81493596204B0F9D0090B9A3 /* School.swift in Sources */,
 				81493591204B0ECB0090B9A3 /* SchoolDirectoryCVCell.swift in Sources */,
 				81493594204B0F090090B9A3 /* SchoolDirectoryCVCellView.swift in Sources */,
@@ -520,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StepUpNYC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.c4q.nyc.StepUpNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,6 +544,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StepUpNYC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.c4q.nyc.StepUpNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

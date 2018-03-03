@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class SchoolDirectoryView: UIView {
 
@@ -21,6 +22,7 @@ class SchoolDirectoryView: UIView {
         setupView()
         schoolCollectionView.delegate = self
         schoolCollectionView.dataSource = self
+        self.backgroundColor = .blue
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -29,7 +31,9 @@ class SchoolDirectoryView: UIView {
     
     private func setupView() {
         addSubview(schoolCollectionView)
-        // TODO: setup Constraints
+        schoolCollectionView.snp.makeConstraints { (make) in
+            make.edges.equalTo(snp.edges)
+        }
         
     }
 }
