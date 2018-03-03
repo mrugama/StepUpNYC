@@ -13,21 +13,26 @@ class DetailSchoolDirectoryKeyInfoView: UIView {
     
     lazy var keyInfoLabel: UILabel = {
         let label = UILabel()
+        label.text = "Something"
         return label
     }()
     
     lazy var keyInfoDetailLabel: UILabel = {
         let label = UILabel()
+        label.text = "Something"
+        label.numberOfLines = 0
         return label
     }()
     
     lazy var locationLabel: UILabel = {
         let label = UILabel()
+        label.text = "Something"
         return label
     }()
     
     lazy var moreInfoButton: UIButton = {
         let button = UIButton()
+        button.setTitle("?", for: .normal)
         return button
     }()
     
@@ -44,6 +49,7 @@ class DetailSchoolDirectoryKeyInfoView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
+        self.backgroundColor = UIColor.red
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -53,8 +59,8 @@ class DetailSchoolDirectoryKeyInfoView: UIView {
     private func setupViews() {
         setupKeyInfoLabel()
         setupKeyInfoDetailLabel()
-        setupLocationLabel()
         setupMoreInfoButton()
+        setupLocationLabel()
         setupMapView()
         
     }
@@ -80,7 +86,7 @@ class DetailSchoolDirectoryKeyInfoView: UIView {
         addSubview(locationLabel)
         locationLabel.snp.makeConstraints { (make) in
             make.top.equalTo(snp.top).offset(8)
-            make.right.equalTo(snp.right).offset(56)
+            make.right.equalTo(moreInfoButton.snp.left).offset(32)
         }
     }
     
