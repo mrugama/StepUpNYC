@@ -10,15 +10,15 @@ import UIKit
 
 class SchoolDirectoryCVCell: UICollectionViewCell {
 
-    var schoolDirectoCVCellView = SchoolDirectoryCVCellView()
+    var schoolDirectoryCVCellView = SchoolDirectoryCVCellView()
     
     func configCell(school: School) {
         setupView()
-        schoolDirectoCVCellView.nameSchoolLabel.text = school.school_name
+        schoolDirectoryCVCellView.nameSchoolLabel.text = school.school_name
     }
     
     private func setupView() {
-        addSubview(schoolDirectoCVCellView)
+        addSubview(schoolDirectoryCVCellView)
         // TODO: setup Constraints
         
     }
