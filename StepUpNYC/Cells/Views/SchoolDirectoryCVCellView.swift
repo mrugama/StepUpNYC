@@ -11,11 +11,14 @@ import UIKit
 class SchoolDirectoryCVCellView: UIView {
     lazy var schoolImageView: UIImageView = {
         let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        image.image = UIImage.init(named: "Queens High School for Sciences at York College")
         return image
     }()
     
     lazy var nameSchoolLabel: UILabel = {
         let label = UILabel()
+        label.textAlignment = .center
         return label
     }()
     
@@ -29,19 +32,19 @@ class SchoolDirectoryCVCellView: UIView {
     }
     
     private func setupView() {
+        addSubview(nameSchoolLabel)
+        nameSchoolLabel.snp.makeConstraints { (make) in
+            make.bottom.equalTo(snp.bottom)
+            make.centerX.equalTo(snp.centerX)
+            make.width.equalTo(snp.width)
+        }
+        
         addSubview(schoolImageView)
         schoolImageView.snp.makeConstraints { (make) in
             make.top.equalTo(snp.top)
             make.width.equalTo(snp.width)
             make.centerX.equalTo(snp.centerX)
             make.bottom.equalTo(nameSchoolLabel.snp.top)
-        }
-        
-        addSubview(nameSchoolLabel)
-        nameSchoolLabel.snp.makeConstraints { (make) in
-            make.bottom.equalTo(snp.bottom)
-            make.centerX.equalTo(snp.centerX)
-            make.width.equalTo(snp.width)
         }
         
     }
