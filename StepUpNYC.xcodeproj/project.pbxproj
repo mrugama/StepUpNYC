@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37A48132D89EE6C24300752E /* Pods_StepUpNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3B145AF618E08F58320988 /* Pods_StepUpNYC.framework */; };
+		81493559204B04870090B9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493558204B04870090B9A3 /* AppDelegate.swift */; };
+		8149355B204B04870090B9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149355A204B04870090B9A3 /* ViewController.swift */; };
+		8149355E204B04870090B9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8149355C204B04870090B9A3 /* Main.storyboard */; };
+		81493560204B04870090B9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8149355F204B04870090B9A3 /* Assets.xcassets */; };
+		81493563204B04870090B9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81493561204B04870090B9A3 /* LaunchScreen.storyboard */; };
+		81493571204B05070090B9A3 /* SchoolDirectoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493570204B05070090B9A3 /* SchoolDirectoryVC.swift */; };
+		81493573204B051B0090B9A3 /* DetailSchoolDirectoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493572204B051B0090B9A3 /* DetailSchoolDirectoryVC.swift */; };
+		81493575204B05390090B9A3 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493574204B05390090B9A3 /* QuizVC.swift */; };
+		81493577204B05570090B9A3 /* ResourcesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493576204B05570090B9A3 /* ResourcesVC.swift */; };
+		8149357B204B05B20090B9A3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149357A204B05B20090B9A3 /* TabBarController.swift */; };
+		8149357D204B07E30090B9A3 /* SchoolDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149357C204B07E30090B9A3 /* SchoolDirectoryView.swift */; };
+		8149357F204B07F90090B9A3 /* DetailSchoolDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */; };
+		81493581204B0CC80090B9A3 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493580204B0CC80090B9A3 /* QuizView.swift */; };
+		81493583204B0CDF0090B9A3 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493582204B0CDF0090B9A3 /* ResourcesView.swift */; };
+		81493585204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */; };
+		81493587204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */; };
+		81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */; };
+		8149358B204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149358A204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift */; };
+		8149358D204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149358C204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift */; };
+		8149358F204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149358E204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift */; };
+		81493591204B0ECB0090B9A3 /* SchoolDirectoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493590204B0ECB0090B9A3 /* SchoolDirectoryCVCell.swift */; };
+		81493594204B0F090090B9A3 /* SchoolDirectoryCVCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493593204B0F090090B9A3 /* SchoolDirectoryCVCellView.swift */; };
+		81493596204B0F9D0090B9A3 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493595204B0F9D0090B9A3 /* School.swift */; };
+		81493598204B0FC30090B9A3 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493597204B0FC30090B9A3 /* NetworkHelper.swift */; };
+		8149359A204B0FD40090B9A3 /* SchoolAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493599204B0FD40090B9A3 /* SchoolAPIClient.swift */; };
+		8149359C204B0FF70090B9A3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359B204B0FF70090B9A3 /* Question.swift */; };
+		8149359E204B101F0090B9A3 /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359D204B101F0090B9A3 /* QuestionService.swift */; };
+		814935A0204B10F30090B9A3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359F204B10F30090B9A3 /* AppError.swift */; };
+		814935A2204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E3B145AF618E08F58320988 /* Pods_StepUpNYC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepUpNYC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81493555204B04870090B9A3 /* StepUpNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepUpNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81493558204B04870090B9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8149355A204B04870090B9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8149355D204B04870090B9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8149355F204B04870090B9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81493562204B04870090B9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81493564204B04870090B9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81493570204B05070090B9A3 /* SchoolDirectoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDirectoryVC.swift; sourceTree = "<group>"; };
+		81493572204B051B0090B9A3 /* DetailSchoolDirectoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryVC.swift; sourceTree = "<group>"; };
+		81493574204B05390090B9A3 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		81493576204B05570090B9A3 /* ResourcesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesVC.swift; sourceTree = "<group>"; };
+		8149357A204B05B20090B9A3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8149357C204B07E30090B9A3 /* SchoolDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDirectoryView.swift; sourceTree = "<group>"; };
+		8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryView.swift; sourceTree = "<group>"; };
+		81493580204B0CC80090B9A3 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		81493582204B0CDF0090B9A3 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryImageView.swift; sourceTree = "<group>"; };
+		81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryKeyInfoView.swift; sourceTree = "<group>"; };
+		81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryGeneralInfo.swift; sourceTree = "<group>"; };
+		8149358A204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryRequirementsView.swift; sourceTree = "<group>"; };
+		8149358C204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryStatisticsView.swift; sourceTree = "<group>"; };
+		8149358E204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryKeyInfoTransportationsView.swift; sourceTree = "<group>"; };
+		81493590204B0ECB0090B9A3 /* SchoolDirectoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDirectoryCVCell.swift; sourceTree = "<group>"; };
+		81493593204B0F090090B9A3 /* SchoolDirectoryCVCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDirectoryCVCellView.swift; sourceTree = "<group>"; };
+		81493595204B0F9D0090B9A3 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		81493597204B0FC30090B9A3 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		81493599204B0FD40090B9A3 /* SchoolAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPIClient.swift; sourceTree = "<group>"; };
+		8149359B204B0FF70090B9A3 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8149359D204B101F0090B9A3 /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
+		8149359F204B10F30090B9A3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SchoolDirectoryView+Delegates.swift"; sourceTree = "<group>"; };
+		82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.release.xcconfig"; sourceTree = "<group>"; };
+		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81493552204B04870090B9A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A48132D89EE6C24300752E /* Pods_StepUpNYC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400553448B270C811E88BEBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */,
+				82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8149354C204B04870090B9A3 = {
+			isa = PBXGroup;
+			children = (
+				81493557204B04870090B9A3 /* StepUpNYC */,
+				81493556204B04870090B9A3 /* Products */,
+				400553448B270C811E88BEBD /* Pods */,
+				D04821CD7B5B546844443EBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81493556204B04870090B9A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81493555204B04870090B9A3 /* StepUpNYC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81493557204B04870090B9A3 /* StepUpNYC */ = {
+			isa = PBXGroup;
+			children = (
+				8149356F204B04CB0090B9A3 /* Services */,
+				8149356E204B04C60090B9A3 /* Models */,
+				8149356D204B04C00090B9A3 /* Cells */,
+				8149356B204B04B10090B9A3 /* View Controllers */,
+				8149356A204B04A00090B9A3 /* Supporting Files */,
+				81493564204B04870090B9A3 /* Info.plist */,
+			);
+			path = StepUpNYC;
+			sourceTree = "<group>";
+		};
+		8149356A204B04A00090B9A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81493558204B04870090B9A3 /* AppDelegate.swift */,
+				8149355A204B04870090B9A3 /* ViewController.swift */,
+				8149355C204B04870090B9A3 /* Main.storyboard */,
+				8149355F204B04870090B9A3 /* Assets.xcassets */,
+				81493561204B04870090B9A3 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8149356B204B04B10090B9A3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8149356C204B04BA0090B9A3 /* Views */,
+				8149357A204B05B20090B9A3 /* TabBarController.swift */,
+				81493570204B05070090B9A3 /* SchoolDirectoryVC.swift */,
+				81493572204B051B0090B9A3 /* DetailSchoolDirectoryVC.swift */,
+				81493574204B05390090B9A3 /* QuizVC.swift */,
+				81493576204B05570090B9A3 /* ResourcesVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8149356C204B04BA0090B9A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8149357C204B07E30090B9A3 /* SchoolDirectoryView.swift */,
+				814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */,
+				8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */,
+				81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */,
+				81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */,
+				8149358E204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift */,
+				81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */,
+				8149358A204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift */,
+				8149358C204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift */,
+				81493580204B0CC80090B9A3 /* QuizView.swift */,
+				81493582204B0CDF0090B9A3 /* ResourcesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8149356D204B04C00090B9A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				81493592204B0ED50090B9A3 /* Views */,
+				81493590204B0ECB0090B9A3 /* SchoolDirectoryCVCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8149356E204B04C60090B9A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81493595204B0F9D0090B9A3 /* School.swift */,
+				8149359B204B0FF70090B9A3 /* Question.swift */,
+				8149359F204B10F30090B9A3 /* AppError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8149356F204B04CB0090B9A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81493597204B0FC30090B9A3 /* NetworkHelper.swift */,
+				81493599204B0FD40090B9A3 /* SchoolAPIClient.swift */,
+				8149359D204B101F0090B9A3 /* QuestionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		81493592204B0ED50090B9A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81493593204B0F090090B9A3 /* SchoolDirectoryCVCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D04821CD7B5B546844443EBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E3B145AF618E08F58320988 /* Pods_StepUpNYC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81493554204B04870090B9A3 /* StepUpNYC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81493567204B04870090B9A3 /* Build configuration list for PBXNativeTarget "StepUpNYC" */;
+			buildPhases = (
+				0CA22FE1152DCDA57ED6C58A /* [CP] Check Pods Manifest.lock */,
+				81493551204B04870090B9A3 /* Sources */,
+				81493552204B04870090B9A3 /* Frameworks */,
+				81493553204B04870090B9A3 /* Resources */,
+				444434FA2F24820219E539EE /* [CP] Embed Pods Frameworks */,
+				B6BF0DE0190BDDA247769DF1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepUpNYC;
+			productName = StepUpNYC;
+			productReference = 81493555204B04870090B9A3 /* StepUpNYC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8149354D204B04870090B9A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = C4Q;
+				TargetAttributes = {
+					81493554204B04870090B9A3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 81493550204B04870090B9A3 /* Build configuration list for PBXProject "StepUpNYC" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8149354C204B04870090B9A3;
+			productRefGroup = 81493556204B04870090B9A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81493554204B04870090B9A3 /* StepUpNYC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81493553204B04870090B9A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81493563204B04870090B9A3 /* LaunchScreen.storyboard in Resources */,
+				81493560204B04870090B9A3 /* Assets.xcassets in Resources */,
+				8149355E204B04870090B9A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CA22FE1152DCDA57ED6C58A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StepUpNYC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		444434FA2F24820219E539EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6BF0DE0190BDDA247769DF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81493551204B04870090B9A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8149355B204B04870090B9A3 /* ViewController.swift in Sources */,
+				81493575204B05390090B9A3 /* QuizVC.swift in Sources */,
+				81493577204B05570090B9A3 /* ResourcesVC.swift in Sources */,
+				81493596204B0F9D0090B9A3 /* School.swift in Sources */,
+				81493591204B0ECB0090B9A3 /* SchoolDirectoryCVCell.swift in Sources */,
+				81493594204B0F090090B9A3 /* SchoolDirectoryCVCellView.swift in Sources */,
+				81493573204B051B0090B9A3 /* DetailSchoolDirectoryVC.swift in Sources */,
+				81493598204B0FC30090B9A3 /* NetworkHelper.swift in Sources */,
+				8149357D204B07E30090B9A3 /* SchoolDirectoryView.swift in Sources */,
+				814935A2204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift in Sources */,
+				8149359E204B101F0090B9A3 /* QuestionService.swift in Sources */,
+				81493585204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift in Sources */,
+				81493587204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift in Sources */,
+				8149357B204B05B20090B9A3 /* TabBarController.swift in Sources */,
+				8149357F204B07F90090B9A3 /* DetailSchoolDirectoryView.swift in Sources */,
+				81493583204B0CDF0090B9A3 /* ResourcesView.swift in Sources */,
+				8149358D204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift in Sources */,
+				8149358B204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift in Sources */,
+				814935A0204B10F30090B9A3 /* AppError.swift in Sources */,
+				8149358F204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift in Sources */,
+				81493581204B0CC80090B9A3 /* QuizView.swift in Sources */,
+				8149359C204B0FF70090B9A3 /* Question.swift in Sources */,
+				81493559204B04870090B9A3 /* AppDelegate.swift in Sources */,
+				8149359A204B0FD40090B9A3 /* SchoolAPIClient.swift in Sources */,
+				81493571204B05070090B9A3 /* SchoolDirectoryVC.swift in Sources */,
+				81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8149355C204B04870090B9A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8149355D204B04870090B9A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81493561204B04870090B9A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81493562204B04870090B9A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81493565204B04870090B9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81493566204B04870090B9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81493568204B04870090B9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StepUpNYC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ac.c4q.nyc.StepUpNYC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81493569204B04870090B9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StepUpNYC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ac.c4q.nyc.StepUpNYC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81493550204B04870090B9A3 /* Build configuration list for PBXProject "StepUpNYC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81493565204B04870090B9A3 /* Debug */,
+				81493566204B04870090B9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81493567204B04870090B9A3 /* Build configuration list for PBXNativeTarget "StepUpNYC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81493568204B04870090B9A3 /* Debug */,
+				81493569204B04870090B9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8149354D204B04870090B9A3 /* Project object */;
+}
