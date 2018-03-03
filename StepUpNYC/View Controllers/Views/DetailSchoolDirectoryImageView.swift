@@ -13,6 +13,8 @@ class DetailSchoolDirectoryImageView: UIView {
 
     lazy var schoolImageView: UIImageView = {
         let iv = UIImageView()
+        iv.contentMode = .scaleAspectFit
+        iv.image = UIImage.init(named: "Bronx High School of Science")
         return iv
     }()
     
