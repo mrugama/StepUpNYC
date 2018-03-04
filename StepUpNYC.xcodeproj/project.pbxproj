@@ -39,6 +39,8 @@
 		814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A3204B5A300090B9A3 /* StyleSheet.swift */; };
 		814935A7204B78CD0090B9A3 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A6204B78CD0090B9A3 /* StorageService.swift */; };
 		814935A9204B78E60090B9A3 /* StorageService+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A8204B78E60090B9A3 /* StorageService+Images.swift */; };
+		814935AB204C4FE60090B9A3 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AA204C4FE60090B9A3 /* QuestionVC.swift */; };
+		814935AD204C51090090B9A3 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AC204C51090090B9A3 /* QuestionView.swift */; };
 		FA2201CB204B36F7006A5895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2201CA204B36F7006A5895 /* Answer.swift */; };
 		FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2201CC204B389D006A5895 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,8 @@
 		814935A3204B5A300090B9A3 /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
 		814935A6204B78CD0090B9A3 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		814935A8204B78E60090B9A3 /* StorageService+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageService+Images.swift"; sourceTree = "<group>"; };
+		814935AA204C4FE60090B9A3 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
+		814935AC204C51090090B9A3 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.release.xcconfig"; sourceTree = "<group>"; };
 		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2201CA204B36F7006A5895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				81493572204B051B0090B9A3 /* DetailSchoolDirectoryVC.swift */,
 				81493574204B05390090B9A3 /* QuizVC.swift */,
 				81493576204B05570090B9A3 /* ResourcesVC.swift */,
+				814935AA204C4FE60090B9A3 /* QuestionVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				8149358A204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift */,
 				8149358C204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift */,
 				81493580204B0CC80090B9A3 /* QuizView.swift */,
+				814935AC204C51090090B9A3 /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -385,6 +391,7 @@
 				8149355B204B04870090B9A3 /* ViewController.swift in Sources */,
 				814935A9204B78E60090B9A3 /* StorageService+Images.swift in Sources */,
 				81493575204B05390090B9A3 /* QuizVC.swift in Sources */,
+				814935AD204C51090090B9A3 /* QuestionView.swift in Sources */,
 				81493577204B05570090B9A3 /* ResourcesVC.swift in Sources */,
 				FA2201CB204B36F7006A5895 /* Answer.swift in Sources */,
 				81493596204B0F9D0090B9A3 /* School.swift in Sources */,
@@ -410,6 +417,7 @@
 				8149359A204B0FD40090B9A3 /* SchoolAPIClient.swift in Sources */,
 				814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */,
 				81493571204B05070090B9A3 /* SchoolDirectoryVC.swift in Sources */,
+				814935AB204C4FE60090B9A3 /* QuestionVC.swift in Sources */,
 				81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

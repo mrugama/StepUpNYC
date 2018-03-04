@@ -13,6 +13,7 @@ class SchoolDirectoryVC: UIViewController {
 
     var schoolDirectory = SchoolDirectoryView()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
