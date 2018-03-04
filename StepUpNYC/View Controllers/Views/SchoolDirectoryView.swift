@@ -10,7 +10,13 @@ import UIKit
 import SnapKit
 import expanding_collection
 
+protocol SchoolDirectoryViewDelegate: class {
+    func didSelectSchool(_ view: SchoolDirectoryView, school: School)
+}
+
 class SchoolDirectoryView: UIView {
+    
+    weak var delegate: SchoolDirectoryViewDelegate?
 
     let cellSpacing: CGFloat = 20.0
     var schools = [School]() {
