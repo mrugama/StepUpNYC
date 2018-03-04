@@ -37,6 +37,8 @@
 		814935A0204B10F30090B9A3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359F204B10F30090B9A3 /* AppError.swift */; };
 		814935A2204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */; };
 		814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A3204B5A300090B9A3 /* StyleSheet.swift */; };
+		814935A7204B78CD0090B9A3 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A6204B78CD0090B9A3 /* StorageService.swift */; };
+		814935A9204B78E60090B9A3 /* StorageService+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A8204B78E60090B9A3 /* StorageService+Images.swift */; };
 		FA2201CB204B36F7006A5895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2201CA204B36F7006A5895 /* Answer.swift */; };
 		FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2201CC204B389D006A5895 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -74,6 +76,8 @@
 		8149359F204B10F30090B9A3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SchoolDirectoryView+Delegates.swift"; sourceTree = "<group>"; };
 		814935A3204B5A300090B9A3 /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
+		814935A6204B78CD0090B9A3 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		814935A8204B78E60090B9A3 /* StorageService+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageService+Images.swift"; sourceTree = "<group>"; };
 		82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.release.xcconfig"; sourceTree = "<group>"; };
 		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2201CA204B36F7006A5895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		8149356F204B04CB0090B9A3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				814935A5204B78B10090B9A3 /* Storage */,
 				81493597204B0FC30090B9A3 /* NetworkHelper.swift */,
 				81493599204B0FD40090B9A3 /* SchoolAPIClient.swift */,
 				8149359D204B101F0090B9A3 /* QuestionService.swift */,
@@ -212,6 +217,15 @@
 				81493593204B0F090090B9A3 /* SchoolDirectoryCVCellView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		814935A5204B78B10090B9A3 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				814935A6204B78CD0090B9A3 /* StorageService.swift */,
+				814935A8204B78E60090B9A3 /* StorageService+Images.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		D04821CD7B5B546844443EBB /* Frameworks */ = {
@@ -324,6 +338,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
 				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -335,6 +350,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -367,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8149355B204B04870090B9A3 /* ViewController.swift in Sources */,
+				814935A9204B78E60090B9A3 /* StorageService+Images.swift in Sources */,
 				81493575204B05390090B9A3 /* QuizVC.swift in Sources */,
 				81493577204B05570090B9A3 /* ResourcesVC.swift in Sources */,
 				FA2201CB204B36F7006A5895 /* Answer.swift in Sources */,
@@ -382,6 +399,7 @@
 				81493587204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift in Sources */,
 				8149357B204B05B20090B9A3 /* TabBarController.swift in Sources */,
 				8149357F204B07F90090B9A3 /* DetailSchoolDirectoryView.swift in Sources */,
+				814935A7204B78CD0090B9A3 /* StorageService.swift in Sources */,
 				8149358D204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift in Sources */,
 				8149358B204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift in Sources */,
 				814935A0204B10F30090B9A3 /* AppError.swift in Sources */,

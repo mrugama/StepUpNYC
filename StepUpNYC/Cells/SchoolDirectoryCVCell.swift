@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import expanding_collection
 
-class SchoolDirectoryCVCell: UICollectionViewCell {
+class SchoolDirectoryCVCell: BasePageCollectionCell {
 
     var schoolDirectoryCVCellView = SchoolDirectoryCVCellView()
     
