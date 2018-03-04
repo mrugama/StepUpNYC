@@ -8,10 +8,11 @@
 
 import UIKit
 import SnapKit
+import expanding_collection
 
 class SchoolDirectoryView: UIView {
 
-    let cellSpacing: CGFloat = 5.0
+    let cellSpacing: CGFloat = 20.0
     var schools = [School]() {
         didSet {
             DispatchQueue.main.async {
@@ -22,10 +23,10 @@ class SchoolDirectoryView: UIView {
     
     lazy var schoolCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
+        layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         cv.register(SchoolDirectoryCVCell.self, forCellWithReuseIdentifier: "SchoolCell")
-        cv.backgroundColor = UIColor.black
+        cv.backgroundColor = Color.blue
         return cv
     }()
     

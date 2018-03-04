@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		37A48132D89EE6C24300752E /* Pods_StepUpNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3B145AF618E08F58320988 /* Pods_StepUpNYC.framework */; };
-		74E5F30E204B63FE00B9CC85 /* 940787368.png in Resources */ = {isa = PBXBuildFile; fileRef = 74E5F30D204B63FE00B9CC85 /* 940787368.png */; };
 		81493559204B04870090B9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493558204B04870090B9A3 /* AppDelegate.swift */; };
 		8149355B204B04870090B9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149355A204B04870090B9A3 /* ViewController.swift */; };
 		8149355E204B04870090B9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8149355C204B04870090B9A3 /* Main.storyboard */; };
@@ -38,13 +37,13 @@
 		8149359E204B101F0090B9A3 /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359D204B101F0090B9A3 /* QuestionService.swift */; };
 		814935A0204B10F30090B9A3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359F204B10F30090B9A3 /* AppError.swift */; };
 		814935A2204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */; };
+		814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A3204B5A300090B9A3 /* StyleSheet.swift */; };
 		FA2201CB204B36F7006A5895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2201CA204B36F7006A5895 /* Answer.swift */; };
 		FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2201CC204B389D006A5895 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E3B145AF618E08F58320988 /* Pods_StepUpNYC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepUpNYC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74E5F30D204B63FE00B9CC85 /* 940787368.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 940787368.png; path = ../../../940787368.png; sourceTree = "<group>"; };
 		81493555204B04870090B9A3 /* StepUpNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepUpNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81493558204B04870090B9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8149355A204B04870090B9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		8149359D204B101F0090B9A3 /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
 		8149359F204B10F30090B9A3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SchoolDirectoryView+Delegates.swift"; sourceTree = "<group>"; };
+		814935A3204B5A300090B9A3 /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
 		82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.release.xcconfig"; sourceTree = "<group>"; };
 		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2201CA204B36F7006A5895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -142,7 +142,6 @@
 				8149355A204B04870090B9A3 /* ViewController.swift */,
 				8149355C204B04870090B9A3 /* Main.storyboard */,
 				8149355F204B04870090B9A3 /* Assets.xcassets */,
-				74E5F30D204B63FE00B9CC85 /* 940787368.png */,
 				81493561204B04870090B9A3 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -195,6 +194,7 @@
 				8149359B204B0FF70090B9A3 /* Question.swift */,
 				FA2201CA204B36F7006A5895 /* Answer.swift */,
 				8149359F204B10F30090B9A3 /* AppError.swift */,
+				814935A3204B5A300090B9A3 /* StyleSheet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81493563204B04870090B9A3 /* LaunchScreen.storyboard in Resources */,
-				74E5F30E204B63FE00B9CC85 /* 940787368.png in Resources */,
 				FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */,
 				81493560204B04870090B9A3 /* Assets.xcassets in Resources */,
 				8149355E204B04870090B9A3 /* Main.storyboard in Resources */,
@@ -327,6 +326,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -336,6 +336,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -391,6 +392,7 @@
 				8149359C204B0FF70090B9A3 /* Question.swift in Sources */,
 				81493559204B04870090B9A3 /* AppDelegate.swift in Sources */,
 				8149359A204B0FD40090B9A3 /* SchoolAPIClient.swift in Sources */,
+				814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */,
 				81493571204B05070090B9A3 /* SchoolDirectoryVC.swift in Sources */,
 				81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */,
 			);

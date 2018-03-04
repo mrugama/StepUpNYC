@@ -16,6 +16,23 @@ class SchoolDirectoryVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        configVC()
+    }
+    
+    private func configVC() {
+        navigationController?.navigationBar.barTintColor = Color.lightRed
+        navigationController?.navigationBar.tintColor = Color.white
+        tabBarController?.tabBar.barTintColor = Color.red
+        tabBarController?.tabBar.tintColor = Color.white
+        let titleLabel = UILabel()
+        titleLabel.textAlignment = .center
+        titleLabel.textColor = Color.white
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        //UIFont(name: "Arial", size: 32)
+        
+        titleLabel.text = "SHSAT 411"
+        navigationItem.titleView = titleLabel
+        navigationController?.navigationBar.isTranslucent = true
     }
 
     private func setupView() {
