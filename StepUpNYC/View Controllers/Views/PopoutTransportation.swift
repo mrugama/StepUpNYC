@@ -81,7 +81,11 @@ class PopoutTransportation: UIView {
         }
         
         addSubview(trainInfoLabel)
-        
+        trainInfoLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(trainLabel.snp.bottom).offset(8)
+            make.left.equalTo(snp.left).offset(8)
+            make.right.equalTo(snp.right).offset(-8)
+        }
     }
 
 }
