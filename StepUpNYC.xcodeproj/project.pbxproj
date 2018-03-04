@@ -42,6 +42,7 @@
 		814935AB204C4FE60090B9A3 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AA204C4FE60090B9A3 /* QuestionVC.swift */; };
 		814935AD204C51090090B9A3 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AC204C51090090B9A3 /* QuestionView.swift */; };
 		814935AF204C6A3D0090B9A3 /* ExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AE204C6A3D0090B9A3 /* ExplanationView.swift */; };
+		814935B3204CB28C0090B9A3 /* PopoutTransportation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935B2204CB28C0090B9A3 /* PopoutTransportation.swift */; };
 		FA2201CB204B36F7006A5895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2201CA204B36F7006A5895 /* Answer.swift */; };
 		FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2201CC204B389D006A5895 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		814935AA204C4FE60090B9A3 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		814935AC204C51090090B9A3 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		814935AE204C6A3D0090B9A3 /* ExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationView.swift; sourceTree = "<group>"; };
+		814935B2204CB28C0090B9A3 /* PopoutTransportation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoutTransportation.swift; sourceTree = "<group>"; };
 		82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.release.xcconfig"; sourceTree = "<group>"; };
 		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2201CA204B36F7006A5895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				81493580204B0CC80090B9A3 /* QuizView.swift */,
 				814935AC204C51090090B9A3 /* QuestionView.swift */,
 				814935AE204C6A3D0090B9A3 /* ExplanationView.swift */,
+				814935B2204CB28C0090B9A3 /* PopoutTransportation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				8149358B204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift in Sources */,
 				814935A0204B10F30090B9A3 /* AppError.swift in Sources */,
 				8149358F204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift in Sources */,
+				814935B3204CB28C0090B9A3 /* PopoutTransportation.swift in Sources */,
 				81493581204B0CC80090B9A3 /* QuizView.swift in Sources */,
 				8149359C204B0FF70090B9A3 /* Question.swift in Sources */,
 				81493559204B04870090B9A3 /* AppDelegate.swift in Sources */,

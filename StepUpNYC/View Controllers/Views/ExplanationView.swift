@@ -14,7 +14,7 @@ class ExplanationView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 22)
-        label.textColor = Color.lightRed
+        label.textColor = Color.white
         label.text = "Explanation"
         return label
     }()
@@ -22,7 +22,7 @@ class ExplanationView: UIView {
     lazy var explanationTextView: UITextView = {
         let tv = UITextView()
         tv.layer.borderColor = UIColor.gray.cgColor
-        tv.font = UIFont.boldSystemFont(ofSize: 14)
+        tv.font = UIFont.boldSystemFont(ofSize: 20)
         tv.layer.borderWidth = 1
         return tv
     }()
@@ -30,6 +30,7 @@ class ExplanationView: UIView {
     lazy var saveButton: UIButton = {
         let button = UIButton()
         button.setTitle("Save", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         return button
     }()
     
