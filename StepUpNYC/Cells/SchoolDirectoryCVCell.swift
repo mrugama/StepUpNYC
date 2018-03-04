@@ -9,7 +9,7 @@
 import UIKit
 import expanding_collection
 
-class SchoolDirectoryCVCell: BasePageCollectionCell {
+class SchoolDirectoryCVCell: UICollectionViewCell {
 
     var schoolDirectoryCVCellView = SchoolDirectoryCVCellView()
     
