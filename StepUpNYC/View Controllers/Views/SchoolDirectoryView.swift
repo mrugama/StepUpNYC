@@ -32,7 +32,7 @@ class SchoolDirectoryView: UIView {
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         cv.register(SchoolDirectoryCVCell.self, forCellWithReuseIdentifier: "SchoolCell")
-        cv.backgroundColor = Color.blue
+        cv.backgroundColor = UIColor.clear
         return cv
     }()
     

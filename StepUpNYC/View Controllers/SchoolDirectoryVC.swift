@@ -19,21 +19,17 @@ class SchoolDirectoryVC: UIViewController {
         setupView()
         configVC()
         schoolDirectory.delegate = self
+        view.verticalGradientLayer(topColor: Color.white, bottomColor: Color.blue)
     }
     
     private func configVC() {
-        navigationController?.navigationBar.barTintColor = Color.lightRed
+        navigationController?.navigationBar.barTintColor = Color.white
         navigationController?.navigationBar.tintColor = Color.white
         tabBarController?.tabBar.barTintColor = Color.red
         tabBarController?.tabBar.tintColor = Color.white
-        let titleLabel = UILabel()
-        titleLabel.textAlignment = .center
-        titleLabel.textColor = Color.white
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
-        //UIFont(name: "Arial", size: 32)
-        
-        titleLabel.text = "SHSAT 411"
-        navigationItem.titleView = titleLabel
+        let titleImage = UIImageView()
+        titleImage.image = #imageLiteral(resourceName: "stepUpLogoSmall")
+        navigationItem.titleView = titleImage
         navigationController?.navigationBar.isTranslucent = true
     }
 
