@@ -43,7 +43,8 @@ class SchoolDirectoryVC: UIViewController {
 
 extension SchoolDirectoryVC: SchoolDirectoryViewDelegate {
     func didSelectSchool(_ view: SchoolDirectoryView, school: School) {
-        let detailVC = DetailSchoolDirectoryVC()
+        
+        let detailVC = SchoolDetailVC.storyboardInstance()
         detailVC.school = school
         
         navigationController?.pushViewController(detailVC, animated: true)
