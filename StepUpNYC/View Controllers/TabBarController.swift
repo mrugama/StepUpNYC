@@ -18,7 +18,6 @@ class TabBarController: UITabBarController {
         schoolDirNav.tabBarItem = UITabBarItem(title: "Directory", image: #imageLiteral(resourceName: "icoDirectory"), tag: 0)
         quizNav.tabBarItem = UITabBarItem(title: "Quiz", image: #imageLiteral(resourceName: "icoQuiz"), tag: 1)
         resourcesNav.tabBarItem = UITabBarItem(title: "Resources", image: #imageLiteral(resourceName: "icoInfo"), tag: 2)
-        
         let tabList = [schoolDirNav, quizNav, resourcesNav]
         viewControllers = tabList
     }
