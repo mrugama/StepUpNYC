@@ -11,6 +11,15 @@ import SnapKit
 
 class DetailSchoolDirectoryImageView: UIView {
 
+    lazy var nameSchoolLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.numberOfLines = 0
+        label.textColor = Color.white
+        return label
+    }()
+    
     lazy var schoolImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
@@ -28,10 +37,19 @@ class DetailSchoolDirectoryImageView: UIView {
     }
     
     private func setupView() {
-        //implement image constraints
+        addSubview(nameSchoolLabel)
+        nameSchoolLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(snp.top).offset(8)
+            make.width.equalTo(snp.width)
+            make.height.equalTo(64)
+        }
+        
         addSubview(schoolImageView)
         schoolImageView.snp.makeConstraints { (make) in
-            make.edges.equalTo(snp.edges)
+            make.top.equalTo(nameSchoolLabel.snp.bottom)
+            make.bottom.equalTo(snp.bottom)
+            make.width.equalTo(snp.width)
+            make.centerX.equalTo(snp.centerX)
         }
     }
     
