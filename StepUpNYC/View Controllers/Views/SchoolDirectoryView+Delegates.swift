@@ -10,7 +10,8 @@ import UIKit
 
 extension SchoolDirectoryView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let school = schools[indexPath.row]
+        delegate?.didSelectSchool(self, school: school)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
