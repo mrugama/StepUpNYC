@@ -22,7 +22,7 @@ class SchoolDirectoryVC: UIViewController {
     private func configVC() {
         navigationController?.navigationBar.barTintColor = Color.lightRed
         navigationController?.navigationBar.tintColor = Color.white
-        tabBarController?.tabBar.barTintColor = Color.lightRed
+        tabBarController?.tabBar.barTintColor = Color.red
         tabBarController?.tabBar.tintColor = Color.white
         let titleLabel = UILabel()
         titleLabel.textAlignment = .center

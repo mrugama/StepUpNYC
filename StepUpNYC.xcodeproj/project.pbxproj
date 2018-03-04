@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		37A48132D89EE6C24300752E /* Pods_StepUpNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3B145AF618E08F58320988 /* Pods_StepUpNYC.framework */; };
-		74E5F30E204B63FE00B9CC85 /* 940787368.png in Resources */ = {isa = PBXBuildFile; fileRef = 74E5F30D204B63FE00B9CC85 /* 940787368.png */; };
 		81493559204B04870090B9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493558204B04870090B9A3 /* AppDelegate.swift */; };
 		8149355B204B04870090B9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149355A204B04870090B9A3 /* ViewController.swift */; };
 		8149355E204B04870090B9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8149355C204B04870090B9A3 /* Main.storyboard */; };
@@ -45,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		5E3B145AF618E08F58320988 /* Pods_StepUpNYC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepUpNYC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74E5F30D204B63FE00B9CC85 /* 940787368.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 940787368.png; path = ../../../940787368.png; sourceTree = "<group>"; };
 		81493555204B04870090B9A3 /* StepUpNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepUpNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81493558204B04870090B9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8149355A204B04870090B9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				8149355A204B04870090B9A3 /* ViewController.swift */,
 				8149355C204B04870090B9A3 /* Main.storyboard */,
 				8149355F204B04870090B9A3 /* Assets.xcassets */,
-				74E5F30D204B63FE00B9CC85 /* 940787368.png */,
 				81493561204B04870090B9A3 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -291,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81493563204B04870090B9A3 /* LaunchScreen.storyboard in Resources */,
-				74E5F30E204B63FE00B9CC85 /* 940787368.png in Resources */,
 				FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */,
 				81493560204B04870090B9A3 /* Assets.xcassets in Resources */,
 				8149355E204B04870090B9A3 /* Main.storyboard in Resources */,
@@ -330,6 +326,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -339,6 +336,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
