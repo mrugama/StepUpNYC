@@ -48,6 +48,7 @@ extension SchoolDirectoryVC: SchoolDirectoryViewDelegate {
     func didSelectSchool(_ view: SchoolDirectoryView, school: School) {
         let detailVC = DetailSchoolDirectoryVC()
         detailVC.school = school
+        
         navigationController?.pushViewController(detailVC, animated: true)
     }
 }

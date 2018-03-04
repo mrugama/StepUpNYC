@@ -10,8 +10,13 @@ import UIKit
 
 class DetailSchoolDirectoryVC: UIViewController {
 
-    var school: School!
     var detailSchoolDirectoryView = DetailSchoolDirectoryView()
+    var school: School! {
+        didSet {
+            print(school.school_name!)
+            detailSchoolDirectoryView.school = school
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
