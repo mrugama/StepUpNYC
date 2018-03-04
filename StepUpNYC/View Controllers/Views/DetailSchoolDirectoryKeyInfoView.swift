@@ -7,8 +7,41 @@
 //
 
 import UIKit
+import MapKit
 
 class DetailSchoolDirectoryKeyInfoView: UIView {
+    
+    lazy var keyInfoLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Something"
+        return label
+    }()
+    
+    lazy var keyInfoDetailLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Something"
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    lazy var locationLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Something"
+        return label
+    }()
+    
+    lazy var moreInfoButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("?", for: .normal)
+        return button
+    }()
+    
+    lazy var mapView: MKMapView = {
+        let map = MKMapView()
+        map.showsUserLocation = true
+        map.mapType = .standard
+        return map
+    }()
 
     var transportationView = DetailSchoolDirectoryKeyInfoTransportationsView()
     // Implement: acceptLabel / acceptanceLabel / LocationLabel / mapKit / infoButton
@@ -16,6 +49,7 @@ class DetailSchoolDirectoryKeyInfoView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
+        self.backgroundColor = UIColor.red
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -23,7 +57,53 @@ class DetailSchoolDirectoryKeyInfoView: UIView {
     }
     
     private func setupViews() {
+        setupKeyInfoLabel()
+        setupKeyInfoDetailLabel()
+        setupMoreInfoButton()
+        setupLocationLabel()
+        setupMapView()
         
     }
     
+    func setupKeyInfoLabel() {
+        addSubview(keyInfoLabel)
+        keyInfoLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(snp.top).offset(8)
+            make.left.equalTo(snp.left).offset(8)
+        }
+    }
+    
+    func setupKeyInfoDetailLabel() {
+        addSubview(keyInfoDetailLabel)
+        keyInfoDetailLabel.snp.makeConstraints { (make) in
+            //how to do the top?
+            make.bottom.equalTo(snp.bottom).offset(-8)
+            make.left.equalTo(snp.left).offset(8)
+        }
+    }
+    
+    func setupLocationLabel() {
+        addSubview(locationLabel)
+        locationLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(snp.top).offset(8)
+            make.right.equalTo(moreInfoButton.snp.left).offset(32)
+        }
+    }
+    
+    func setupMoreInfoButton() {
+        addSubview(moreInfoButton)
+        moreInfoButton.snp.makeConstraints { (make) in
+            make.size.equalTo(32)
+            make.top.equalTo(snp.top).offset(8)
+            make.right.equalTo(8)
+        }
+    }
+    
+    func setupMapView() { 
+        addSubview(mapView)
+        snp.makeConstraints { (make) in
+            make.bottom.equalTo(snp.bottom).offset(-8)
+            make.right.equalTo(snp.right).offset(8)
+        }
+    }
 }

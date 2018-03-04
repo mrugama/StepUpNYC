@@ -11,9 +11,21 @@ import SnapKit
 
 class SchoolDirectoryView: UIView {
 
+    let cellSpacing: CGFloat = 5.0
+    var schools = [School]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.schoolCollectionView.reloadData()
+            }
+        }
+    }
+    
     lazy var schoolCollectionView: UICollectionView = {
-        let cv = UICollectionView()
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let cv = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         cv.register(SchoolDirectoryCVCell.self, forCellWithReuseIdentifier: "SchoolCell")
+        cv.backgroundColor = UIColor.black
         return cv
     }()
     
@@ -22,7 +34,13 @@ class SchoolDirectoryView: UIView {
         setupView()
         schoolCollectionView.delegate = self
         schoolCollectionView.dataSource = self
-        self.backgroundColor = .blue
+        loadData()
+    }
+    
+    private func loadData() {
+        SchoolAPIClient.manager.getDOE(completionHandler: { (schools) in
+            self.schools = schools
+        }, errorHandler: {print($0)})
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,7 +52,6 @@ class SchoolDirectoryView: UIView {
         schoolCollectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(snp.edges)
         }
-        
     }
 }
 

@@ -10,16 +10,25 @@ import UIKit
 
 class SchoolDirectoryCVCell: UICollectionViewCell {
 
-    var schoolDirectoCVCellView = SchoolDirectoryCVCellView()
+    var schoolDirectoryCVCellView = SchoolDirectoryCVCellView()
     
     func configCell(school: School) {
         setupView()
+        schoolDirectoryCVCellView.nameSchoolLabel.text = school.school_name
+        schoolDirectoryCVCellView.layer.cornerRadius = 15
+        schoolDirectoryCVCellView.backgroundColor = UIColor.white
+    }
+    
+    override func layoutSubviews() {
+        schoolDirectoryCVCellView.setNeedsLayout()
     }
     
     private func setupView() {
-        addSubview(schoolDirectoCVCellView)
-        schoolDirectoCVCellView.snp.makeConstraints { (make) in
+
+        addSubview(schoolDirectoryCVCellView)
+        schoolDirectoryCVCellView.snp.makeConstraints { (make) in
             make.edges.equalTo(snp.edges)
         }
+        
     }
 }

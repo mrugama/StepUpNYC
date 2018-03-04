@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import SnapKit
 
 class DetailSchoolDirectoryImageView: UIView {
 
+    lazy var schoolImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleAspectFit
+        iv.image = UIImage.init(named: "Bronx High School of Science")
+        return iv
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,6 +29,11 @@ class DetailSchoolDirectoryImageView: UIView {
     
     private func setupView() {
         //implement image constraints
-        
+        addSubview(schoolImageView)
+        schoolImageView.snp.makeConstraints { (make) in
+            make.edges.equalTo(snp.edges)
+        }
     }
+    
+    
 }
