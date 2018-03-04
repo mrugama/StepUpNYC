@@ -17,6 +17,7 @@ class DetailSchoolDirectoryVC: UIViewController {
         super.viewDidLoad()
         setupView()
         loadData()
+        view.backgroundColor = .white
     }
     
     private func loadData() {

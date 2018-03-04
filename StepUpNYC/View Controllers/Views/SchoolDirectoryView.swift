@@ -42,6 +42,7 @@ class SchoolDirectoryView: UIView {
         schoolCollectionView.delegate = self
         schoolCollectionView.dataSource = self
         loadData()
+
     }
     
     private func loadData() {
