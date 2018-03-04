@@ -22,13 +22,15 @@ class QuestionService {
     private var aRef: DatabaseReference!
     
 
-    func saveQuestion(_ question : Question,_ answer: Answer,_ image: UIImage?) {
+    func saveQuestion(_ question : Question,_ answers: [Answer],_ image: UIImage?) {
         let newQuestion = qRef.childByAutoId()
         let newAnswer = aRef.childByAutoId()
         let question = Question(text: question.text!, explanation: question.explanation!, imageURL: "")
-        let answer = Answer(questionId: newQuestion.ref.key, isCorrect: answer.isCorrect!, text: answer.text!)
         newQuestion.setValue(question.toAnyObj())
-        newAnswer.setValue(answer.toAnyObj())
+        for answer in answers {
+            let answer = Answer(questionId: newQuestion.ref.key, isCorrect: answer.isCorrect!, text: answer.text!)
+            newAnswer.setValue(answer.toAnyObj())
+        }
     }
     
     func getQuestion(completion: @escaping ([Question]) -> Void) {

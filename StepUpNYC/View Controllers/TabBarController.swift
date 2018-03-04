@@ -13,7 +13,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let schoolDirNav = UINavigationController(rootViewController: SchoolDirectoryVC())
-        let quizNav = UINavigationController(rootViewController: QuizVC())
+        let quizNav = UINavigationController(rootViewController: QuestionVC())
         let resourcesNav = UINavigationController(rootViewController: ResourcesVC())
         schoolDirNav.tabBarItem = UITabBarItem(title: "Directory", image: #imageLiteral(resourceName: "icoDirectory"), tag: 0)
         quizNav.tabBarItem = UITabBarItem(title: "Quiz", image: #imageLiteral(resourceName: "icoQuiz"), tag: 1)
