@@ -17,12 +17,8 @@ class DetailSchoolDirectoryVC: UIViewController {
         super.viewDidLoad()
         setupView()
         loadData()
-<<<<<<< HEAD
-        view.backgroundColor = .white
-=======
         configVC()
         view.verticalGradientLayer(topColor: Color.white, bottomColor: Color.blue)
->>>>>>> b0f547894070739a82f3fb65d873a056297c645a
     }
     
     private func loadData() {
