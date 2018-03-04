@@ -13,7 +13,7 @@ struct SchoolAPIClient {
     
     func getDOE(completionHandler: @escaping ([School]) -> Void,
                 errorHandler: @escaping (Error) -> Void) {
-        let urlStr = "https://data.cityofnewyork.us/resource/97mf-9njv.json"
+        let urlStr = "https://data.cityofnewyork.us/resource/97mf-9njv.json?specialized=1"
         guard let url = URL(string: urlStr) else {return}
         let parseData = {(data: Data) in
             do {

@@ -18,6 +18,7 @@ class SchoolDirectoryCVCellView: UIView {
     
     lazy var nameSchoolLabel: UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
         label.textAlignment = .center
         return label
     }()
@@ -44,7 +45,7 @@ class SchoolDirectoryCVCellView: UIView {
             make.top.equalTo(snp.top)
             make.width.equalTo(snp.width)
             make.centerX.equalTo(snp.centerX)
-            make.bottom.equalTo(nameSchoolLabel.snp.top)
+            make.bottom.equalTo(nameSchoolLabel.snp.top).offset(-8)
         }
         
     }
