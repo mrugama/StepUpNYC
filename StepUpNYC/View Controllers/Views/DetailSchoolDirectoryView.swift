@@ -11,12 +11,16 @@ import SnapKit
 
 class DetailSchoolDirectoryView: UIView {
 
+    
+    var school: School!
     var schoolImageView = DetailSchoolDirectoryImageView()
     var keyInfoView = DetailSchoolDirectoryKeyInfoView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
+        //schoolImageView.schoolImageView.image = UIImage.init(named: (school.bin)!)
+        keyInfoView.keyInfoDetailLabel.text = "email: \(school.school_email ?? "") \n phone: \(school.phone_number ?? ""))"
     }
     
     required init?(coder aDecoder: NSCoder) {

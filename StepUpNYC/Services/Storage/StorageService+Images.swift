@@ -18,7 +18,7 @@ extension StorageService {
         guard let data = UIImageJPEGRepresentation(image, 1.0) else { print("image is nil"); return }
         let metadata = StorageMetadata()
         metadata.contentType = "image/jpeg"
-        let uploadTask = StorageService.manager.getImagesRef().child(postId ?? userId!).putData(data, metadata: metadata) { (storageMetadata, error) in
+        let uploadTask = StorageService.manager.getImagesRef().child(postId ?? "").putData(data, metadata: metadata) { (storageMetadata, error) in
             if let error = error {
                 self.delegate?.didFailImageSave?(error: error)
             } else if let _ = storageMetadata {
@@ -47,10 +47,10 @@ extension StorageService {
             // Upload completed successfully
             
             // set job's imageURL
-            let imageURL = String(describing: snapshot.metadata!.downloadURL()!)
-            if let postId = postId {
-                PostService.manager.getPostsRef().child("\(postId)/imageURL").setValue(imageURL)
-            }
+//            let imageURL = String(describing: snapshot.metadata!.downloadURL()!)
+//            if let postId = postId {
+                //PostService.manager.getPostsRef().child("\(postId)/imageURL").setValue(imageURL)
+//            }
             //self.delegate?.didImageSave?()
         }
         
