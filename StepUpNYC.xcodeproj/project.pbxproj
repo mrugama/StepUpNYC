@@ -21,7 +21,6 @@
 		8149357D204B07E30090B9A3 /* SchoolDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149357C204B07E30090B9A3 /* SchoolDirectoryView.swift */; };
 		8149357F204B07F90090B9A3 /* DetailSchoolDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */; };
 		81493581204B0CC80090B9A3 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493580204B0CC80090B9A3 /* QuizView.swift */; };
-		81493583204B0CDF0090B9A3 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493582204B0CDF0090B9A3 /* ResourcesView.swift */; };
 		81493585204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */; };
 		81493587204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */; };
 		81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */; };
@@ -59,7 +58,6 @@
 		8149357C204B07E30090B9A3 /* SchoolDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDirectoryView.swift; sourceTree = "<group>"; };
 		8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryView.swift; sourceTree = "<group>"; };
 		81493580204B0CC80090B9A3 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
-		81493582204B0CDF0090B9A3 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryImageView.swift; sourceTree = "<group>"; };
 		81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryKeyInfoView.swift; sourceTree = "<group>"; };
 		81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryGeneralInfo.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				8149358A204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift */,
 				8149358C204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift */,
 				81493580204B0CC80090B9A3 /* QuizView.swift */,
-				81493582204B0CDF0090B9A3 /* ResourcesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,6 +319,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FAQView/FAQView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -332,6 +330,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FAQView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -383,7 +382,6 @@
 				81493587204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift in Sources */,
 				8149357B204B05B20090B9A3 /* TabBarController.swift in Sources */,
 				8149357F204B07F90090B9A3 /* DetailSchoolDirectoryView.swift in Sources */,
-				81493583204B0CDF0090B9A3 /* ResourcesView.swift in Sources */,
 				8149358D204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift in Sources */,
 				8149358B204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift in Sources */,
 				814935A0204B10F30090B9A3 /* AppError.swift in Sources */,
