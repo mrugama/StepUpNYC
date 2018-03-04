@@ -37,20 +37,28 @@ class DetailSchoolDirectoryImageView: UIView {
     }
     
     private func setupView() {
-        addSubview(nameSchoolLabel)
-        nameSchoolLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(snp.top).offset(8)
-            make.width.equalTo(snp.width)
-            make.height.equalTo(64)
-        }
-        
         addSubview(schoolImageView)
         schoolImageView.snp.makeConstraints { (make) in
-            make.top.equalTo(nameSchoolLabel.snp.bottom)
-            make.bottom.equalTo(snp.bottom)
-            make.width.equalTo(snp.width)
+            make.top.equalTo(snp.top).offset(5)
+            make.left.equalTo(snp.left)
+            make.right.equalTo(snp.right)
             make.centerX.equalTo(snp.centerX)
+            //            make.top.equalTo(nameSchoolLabel.snp.bottom)
+            //            make.bottom.equalTo(snp.bottom)
+            //            make.width.equalTo(snp.width)
+            //            make.centerX.equalTo(snp.centerX)
         }
+        
+        addSubview(nameSchoolLabel)
+        nameSchoolLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(schoolImageView.snp.bottom).offset(5)
+            make.width.equalTo(snp.width)
+            make.height.equalTo(64)
+//            make.top.equalTo(snp.top).offset(8)
+//            make.width.equalTo(snp.width)
+//            make.height.equalTo(64)
+        }
+        
     }
     
     
