@@ -19,8 +19,8 @@ class ResourcesVC: UIViewController {
         super.viewDidLoad()
         
         self.title = "Tips and Resources"
-        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .stop, target: nil, action: nil)
-        navigationItem.leftBarButtonItem = rightBarButton
+        //let rightBarButton = UIBarButtonItem(barButtonSystemItem: .stop, target: nil, action: nil)
+        //navigationItem.leftBarButtonItem = rightBarButton
         faqView = FAQView(frame: view.frame, title: "", items: items)
         view.addSubview(faqView)
         addFaqViewConstraints()

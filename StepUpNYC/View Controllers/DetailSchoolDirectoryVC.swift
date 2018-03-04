@@ -11,17 +11,18 @@ import UIKit
 class DetailSchoolDirectoryVC: UIViewController {
 
     var detailSchoolDirectoryView = DetailSchoolDirectoryView()
-    var school: School! {
-        didSet {
-            print(school.school_name!)
-            detailSchoolDirectoryView.school = school
-        }
-    }
+    var school: School!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        detailSchoolDirectoryView.school = school
+        loadData()
+    }
+    
+    private func loadData() {
+        detailSchoolDirectoryView.schoolImageView.schoolImageView.image = UIImage.init(named: school.bin!)
+        detailSchoolDirectoryView.schoolImageView.nameSchoolLabel.text = school.school_name
+        detailSchoolDirectoryView.keyInfoView.keyInfoDetailLabel.text = "email: \(school.school_email ?? "") \nphone: \(school.phone_number ?? "") \nwebsite: \(school.website ?? "")"
     }
     
     private func setupView() {

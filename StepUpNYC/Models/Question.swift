@@ -8,12 +8,8 @@
 
 import Foundation
 
-
-
-
 struct Question: Codable {
     let text: String?
-    let answers: [Answer]?
     let explanation: String?
-    let imageID: String?
+    let imageURL: String?
 }
