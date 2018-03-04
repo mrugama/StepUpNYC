@@ -10,12 +10,11 @@ import Foundation
 import FirebaseDatabase
 
 
-
 struct Question: Codable {
     let text: String?
     let explanation: String?
     let imageURL: String?
-    
+
     // get data from Online
     init(snapShot: DataSnapshot) {
         let value = snapShot.value as? [String: Any]
