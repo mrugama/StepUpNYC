@@ -21,9 +21,10 @@ class ResourcesVC: UIViewController {
         self.title = "Tips and Resources"
         let rightBarButton = UIBarButtonItem(barButtonSystemItem: .stop, target: nil, action: nil)
         navigationItem.leftBarButtonItem = rightBarButton
-        faqView = FAQView(frame: view.frame, title: "Resources", items: items)
+        faqView = FAQView(frame: view.frame, title: "", items: items)
         view.addSubview(faqView)
         addFaqViewConstraints()
+        configVC()
         
         //Initialize the FAQ cocoa pod
         faqView.translatesAutoresizingMaskIntoConstraints = false
@@ -31,6 +32,22 @@ class ResourcesVC: UIViewController {
         faqView.questionTextColor = UIColor.blue
         faqView.answerTextColor = Color.blue
         faqView.dataDetectorTypes = [.phoneNumber, .link]
+    }
+    
+    private func configVC() {
+        navigationController?.navigationBar.barTintColor = Color.lightRed
+        navigationController?.navigationBar.tintColor = Color.white
+        tabBarController?.tabBar.barTintColor = Color.red
+        tabBarController?.tabBar.tintColor = Color.white
+        let titleLabel = UILabel()
+        titleLabel.textAlignment = .center
+        titleLabel.textColor = Color.white
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        //UIFont(name: "Arial", size: 32)
+        
+        titleLabel.text = "SHSAT 411"
+        navigationItem.titleView = titleLabel
+        navigationController?.navigationBar.isTranslucent = true
     }
     
     func addFaqViewConstraints() {
