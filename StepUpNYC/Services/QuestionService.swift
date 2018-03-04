@@ -21,6 +21,7 @@ class QuestionService {
     private var qRef: DatabaseReference!
     private var aRef: DatabaseReference!
     
+
     func saveQuestion(_ question : Question,_ answer: Answer,_ image: UIImage?) {
         let newQuestion = qRef.childByAutoId()
         let newAnswer = aRef.childByAutoId()
