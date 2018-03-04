@@ -7,9 +7,23 @@
 //
 
 import Foundation
+import FirebaseDatabase
 
 struct Answer: Codable {
     let questionId: String?
     let isCorrect: Bool?
     let text: String?
+    
+    init(snapShot: DataSnapshot) {
+        let value = snapShot.value as? [String: Any]
+        self.isCorrect = value?["isCorrect"] as? Bool ?? false
+        self.text = value?["text"] as? String ?? ""
+    }
+    init(isCorrect: Bool, text: String) {
+        self.text = text
+        self.isCorrect = isCorrect
+    }
+    func toAnyObject() -> [String: Any] {
+        return ["isCorrect": isCorrect ?? false, "text": text ?? ""]
+    }
 }
