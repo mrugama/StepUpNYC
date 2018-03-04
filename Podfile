@@ -12,5 +12,6 @@ target 'StepUpNYC' do
     pod 'SnapKit'
     pod 'Kingfisher'
     pod 'expanding-collection'
+    pod 'Toucan'
 
 end

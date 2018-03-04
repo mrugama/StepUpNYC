@@ -17,6 +17,7 @@ class SchoolDirectoryVC: UIViewController {
         super.viewDidLoad()
         setupView()
         configVC()
+        schoolDirectory.delegate = self
     }
     
     private func configVC() {
@@ -40,5 +41,13 @@ class SchoolDirectoryVC: UIViewController {
         schoolDirectory.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view.safeAreaLayoutGuide.snp.edges)
         }
+    }
+}
+
+extension SchoolDirectoryVC: SchoolDirectoryViewDelegate {
+    func didSelectSchool(_ view: SchoolDirectoryView, school: School) {
+        let detailVC = DetailSchoolDirectoryVC()
+        detailVC.school = school
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
