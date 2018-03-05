@@ -13,6 +13,7 @@ struct School: Codable {
     let school_email: String?  //general info
     let overview_paragraph: String? //general info
     let phone_number: String?  //general info
+    let advancedplacement_courses: String?
     let primary_address_line_1: String?
     let city: String?
     let borough: String?

@@ -106,8 +106,8 @@ class SchoolDetailVC: UITableViewController {
     private func setUpMap(_ long: Double,_ lat: Double) {
         let annotation = MKPointAnnotation()
         annotation.coordinate = CLLocationCoordinate2DMake(lat, long)
-        annotation.title = "My Annotation"
-        annotation.subtitle = "subtitle"
+        annotation.title = "\(school.school_name ?? "")"
+        //annotation.subtitle = "subtitle"
 
         DispatchQueue.main.async {
             //self.schoolMapView.addAnnotation(self.annotation)
@@ -118,12 +118,10 @@ class SchoolDetailVC: UITableViewController {
     
     @IBAction func segmentedTapped(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            print("general info pressed")
-            moreInfoLabel.text = "\(school.overview_paragraph ?? "") \n \(school.total_students ?? "") \n Website: \(school.website ?? "") \n Phone #: \(school.phone_number ?? "") \n Email: \(school.school_email ?? "")"
+            moreInfoLabel.text = "\(school.overview_paragraph ?? "") \n \(school.total_students ?? "") \nWebsite: \(school.website ?? "") \nPhone #: \(school.phone_number ?? "") \nEmail: \(school.school_email ?? "")"
             
         } else {
-            print("requirements pressed")
-            moreInfoLabel.text = "Entrance Method: \(school.method1 ?? "") \n Required: \(school.prgdesc1 ?? "")"
+            moreInfoLabel.text = "Entrance Method: \(school.method1 ?? "") \n\nRequired: \(school.prgdesc1 ?? "")"
         }
     }
     

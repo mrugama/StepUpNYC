@@ -13,6 +13,8 @@ struct Question: Codable {
     let text: String?
     let explanation: String?
     let imageURL: String?
+    let answers: [Answer]?
+
     
     // Data from Firebase
     init(snapShot: DataSnapshot) {
@@ -20,6 +22,7 @@ struct Question: Codable {
         self.text = value?["text"] as? String ?? ""
         self.explanation = value?["explanation"] as? String ?? ""
         self.imageURL = value?["imageURL"] as? String ?? ""
+        self.answers = value?["answers"] as? [Answer] ?? []
     }
     
     // convert into data model
@@ -27,6 +30,7 @@ struct Question: Codable {
         self.text = text
         self.explanation = explanation
         self.imageURL = imageURL ?? ""
+        self.answers = []
     }
     
     // convert into JSON format
