@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import expanding_collection
 
 class SchoolDirectoryCVCell: UICollectionViewCell {
 
@@ -14,6 +15,7 @@ class SchoolDirectoryCVCell: UICollectionViewCell {
     
     func configCell(school: School) {
         setupView()
+        schoolDirectoryCVCellView.schoolImageView.image = UIImage.init(named: school.bin!)
         schoolDirectoryCVCellView.nameSchoolLabel.text = school.school_name
         schoolDirectoryCVCellView.layer.cornerRadius = 15
         schoolDirectoryCVCellView.backgroundColor = UIColor.white

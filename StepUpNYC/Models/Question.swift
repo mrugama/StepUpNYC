@@ -7,13 +7,36 @@
 //
 
 import Foundation
-
-
-
+import FirebaseDatabase
 
 struct Question: Codable {
     let text: String?
-    let answers: [Answer]?
     let explanation: String?
-    let imageID: String?
+    let imageURL: String?
+    let answers: [Answer]?
+
+    
+    // Data from Firebase
+    init(snapShot: DataSnapshot) {
+        let value = snapShot.value as? [String: Any]
+        self.text = value?["text"] as? String ?? ""
+        self.explanation = value?["explanation"] as? String ?? ""
+        self.imageURL = value?["imageURL"] as? String ?? ""
+        self.answers = value?["answers"] as? [Answer] ?? []
+    }
+    
+    // convert into data model
+    init(text: String, explanation: String, imageURL: String?) {
+        self.text = text
+        self.explanation = explanation
+        self.imageURL = imageURL ?? ""
+        self.answers = []
+    }
+    
+    // convert into JSON format
+    func toAnyObj() -> [String: Any] {
+        return ["text": text ?? "",
+                "explanation": explanation ?? "",
+                "imageURL": imageURL ?? ""]
+    }
 }

@@ -10,7 +10,8 @@ import UIKit
 
 extension SchoolDirectoryView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let school = schools[indexPath.row]
+        delegate?.didSelectSchool(self, school: school)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -21,7 +22,7 @@ extension SchoolDirectoryView: UICollectionViewDelegate {
 
 extension SchoolDirectoryView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfCells: CGFloat = 3
+        let numberOfCells: CGFloat = 1
         let numberOfSpaces: CGFloat = numberOfCells + 1
         let width = (collectionView.bounds.width - (numberOfSpaces * cellSpacing)) / numberOfCells
         let height = width

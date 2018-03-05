@@ -13,9 +13,24 @@ class SchoolDirectoryVC: UIViewController {
 
     var schoolDirectory = SchoolDirectoryView()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        configVC()
+        schoolDirectory.delegate = self
+        view.verticalGradientLayer(topColor: Color.white, bottomColor: Color.blue)
+    }
+    
+    private func configVC() {
+        navigationController?.navigationBar.barTintColor = Color.white
+        navigationController?.navigationBar.tintColor = Color.white
+        tabBarController?.tabBar.barTintColor = Color.red
+        tabBarController?.tabBar.tintColor = Color.white
+        let titleImage = UIImageView()
+        titleImage.image = #imageLiteral(resourceName: "stepUpLogoSmall")
+        navigationItem.titleView = titleImage
+        navigationController?.navigationBar.isTranslucent = true
     }
 
     private func setupView() {
@@ -23,5 +38,15 @@ class SchoolDirectoryVC: UIViewController {
         schoolDirectory.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view.safeAreaLayoutGuide.snp.edges)
         }
+    }
+}
+
+extension SchoolDirectoryVC: SchoolDirectoryViewDelegate {
+    func didSelectSchool(_ view: SchoolDirectoryView, school: School) {
+        
+        let detailVC = SchoolDetailVC.storyboardInstance()
+        detailVC.school = school
+        
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

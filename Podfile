@@ -11,5 +11,8 @@ target 'StepUpNYC' do
     pod 'Firebase/Storage'
     pod 'SnapKit'
     pod 'Kingfisher'
+    pod 'expanding-collection'
+    pod 'FAQView'
+    pod 'Toucan'
 
 end
