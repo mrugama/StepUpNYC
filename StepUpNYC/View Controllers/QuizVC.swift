@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 class QuizVC: UIViewController{
-    var counter = 0
+    var index = 0
     //var popUpView = PopUpView()
     
     var blurEffectView: UIVisualEffectView!
@@ -20,6 +20,7 @@ class QuizVC: UIViewController{
     var questions = [Question]() {
         didSet {
             question = questions[0]
+            populateLabels()
         }
     }
 
@@ -46,7 +47,17 @@ class QuizVC: UIViewController{
     }
     override func viewDidAppear(_ animated: Bool) {
         view.setNeedsLayout()
+        populateLabels()
+        
     
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        index = 0
+        populateLabels()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        index = 0
+        populateLabels()
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -82,6 +93,7 @@ class QuizVC: UIViewController{
         
         UIView.animate(withDuration: 0.8) {
             self.quizView.explanationTextView.alpha = 1.0
+            self.quizView.explanationTextView.isHidden = false
 //            self.quizView.explanationTextView.alpha = 1.0
 //            //self.quizView.containerView.alpha = 0
 //            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
@@ -100,8 +112,19 @@ class QuizVC: UIViewController{
             self.quizView.explanationTextView.alpha = 0
             self.quizView.explanationTextView.isHidden = true
         }
+        nextIndex()
+        question = questions[index]
+        populateLabels()
+        enableButtons()
     }
-
+    private func nextIndex() {
+        index += 1
+    }
+    private func enableButtons() {
+        [quizView.answerOneButton,quizView.answerTwoButton,quizView.answerThreeButton,quizView.answerFourButton].forEach { (button) in
+            button.isEnabled = true
+        }
+    }
     private func disableButtons() {
         [quizView.answerOneButton,quizView.answerTwoButton,quizView.answerThreeButton,quizView.answerFourButton].forEach { (button) in
             button.isEnabled = false
@@ -127,11 +150,6 @@ class QuizVC: UIViewController{
 //        }
         
  
-    }
-    private func quizGame() {
-        while counter <= 2  {
-            populateLabels()
-        }
     }
     
     private func populateButtons() {
