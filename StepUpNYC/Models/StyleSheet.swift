@@ -14,6 +14,8 @@ enum Color {
     static let blue = UIColor(red:33/255, green:145/255, blue:251/255, alpha:1.0)
     static let lightRed = UIColor(red:242/255, green:67/255, blue:51/255, alpha:1.0)
     static let red = UIColor(red:186/255, green:27/255, blue:29/255, alpha:1.0)
+    static let orange = UIColor(red:0.98, green:0.53, blue:0.01, alpha:1.0)
+    static let redTwo = UIColor(red:0.98, green:0.01, blue:0.01, alpha:1.0)
 }
 
 extension UIView {
@@ -27,3 +29,5 @@ extension UIView {
         self.layer.insertSublayer(gradient, at: 0)
     }
 }
+
+

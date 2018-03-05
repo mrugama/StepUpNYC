@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
+
 struct Answer: Codable {
     let questionId: String?
     let isCorrect: Bool?
@@ -36,3 +37,4 @@ struct Answer: Codable {
                 "text": text ?? ""]
     }
 }
+

@@ -1,3 +1,4 @@
+
 //
 //  PopoutTransportation.swift
 //  StepUpNYC
@@ -10,82 +11,63 @@ import UIKit
 
 class PopoutTransportation: UIView {
 
+    lazy var closeButton: UIButton = {
+        let button = UIButton()
+        button.setImage(#imageLiteral(resourceName: "X"), for: .normal)
+        button.backgroundColor = Color.blue
+        button.layer.cornerRadius = 32
+        return button
+    }()
+    
     lazy var transLabel: UILabel = {
         let label = UILabel()
         label.text = "Transportation"
         label.textAlignment = .center
+        label.textColor = Color.white
         return label
     }()
     
-    lazy var busLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Bus:"
-        label.textAlignment = .left
-        return label
-    }()
-    
-    lazy var busInfoLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .left
-        label.numberOfLines = 0
-        return label
-    }()
-    
-    lazy var trainLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Train:"
-        label.textAlignment = .left
-        return label
-    }()
-    
-    lazy var trainInfoLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .left
-        label.numberOfLines = 0
-        return label
+    lazy var infoTexView: UITextView = {
+        let tv = UITextView()
+        tv.isEditable = false
+        return tv
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
+        self.backgroundColor = Color.blue
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func layoutSubviews() {
+        closeButton.setNeedsLayout()
+    }
+    
     private func setupViews() {
+        addSubview(closeButton)
+        closeButton.snp.makeConstraints { (make) in
+            make.centerY.equalTo(snp.top)
+            make.centerX.equalTo(snp.right)
+            make.height.width.equalTo(64)
+        }
+        
         addSubview(transLabel)
         transLabel.snp.makeConstraints { (make) in
             make.top.equalTo(snp.top).offset(8)
             make.centerX.equalTo(snp.centerX)
         }
         
-        addSubview(busLabel)
-        busLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(transLabel.snp.bottom).offset(64)
-            make.left.equalTo(snp.left).offset(8)
-        }
-        
-        addSubview(busInfoLabel)
-        busInfoLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(busLabel.snp.bottom).offset(32)
+        addSubview(infoTexView)
+        infoTexView.snp.makeConstraints { (make) in
+            make.top.equalTo(transLabel.snp.bottom).offset(16)
             make.left.equalTo(snp.left).offset(8)
             make.right.equalTo(snp.right).offset(-8)
+            make.bottom.equalTo(snp.bottom).offset(-8)
         }
         
-        addSubview(trainLabel)
-        trainLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(busInfoLabel.snp.bottom).offset(32)
-            make.left.equalTo(snp.left).offset(8)
-        }
-        
-        addSubview(trainInfoLabel)
-        trainInfoLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(trainLabel.snp.bottom).offset(8)
-            make.left.equalTo(snp.left).offset(8)
-            make.right.equalTo(snp.right).offset(-8)
-        }
     }
-
 }

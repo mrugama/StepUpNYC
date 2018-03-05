@@ -44,8 +44,12 @@
 		814935B3204CB28C0090B9A3 /* PopoutTransportation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935B2204CB28C0090B9A3 /* PopoutTransportation.swift */; };
 		81BB4B9D204CA004002AAE5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BB4B9C204CA004002AAE5C /* Main.storyboard */; };
 		81BB4BA0204CA086002AAE5C /* SchoolDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB4B9F204CA086002AAE5C /* SchoolDetailVC.swift */; };
+		81BB4BA2204CCB27002AAE5C /* PopoutTransportation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB4BA1204CCB27002AAE5C /* PopoutTransportation.swift */; };
 		FA2201CB204B36F7006A5895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2201CA204B36F7006A5895 /* Answer.swift */; };
 		FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2201CC204B389D006A5895 /* GoogleService-Info.plist */; };
+		FAE6DE3B204B830600ABC510 /* QuestionJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = FAE6DE3A204B830500ABC510 /* QuestionJSON.json */; };
+		FAE6DE3D204C5C1E00ABC510 /* JSONParsingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6DE3C204C5C1E00ABC510 /* JSONParsingService.swift */; };
+		FAE6DE3F204C7A0000ABC510 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6DE3E204C7A0000ABC510 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,10 +93,14 @@
 
 		81BB4B9C204CA004002AAE5C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		81BB4B9F204CA086002AAE5C /* SchoolDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetailVC.swift; sourceTree = "<group>"; };
+		81BB4BA1204CCB27002AAE5C /* PopoutTransportation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoutTransportation.swift; sourceTree = "<group>"; };
 		82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.release.xcconfig"; sourceTree = "<group>"; };
 		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2201CA204B36F7006A5895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		FA2201CC204B389D006A5895 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAE6DE3A204B830500ABC510 /* QuestionJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionJSON.json; sourceTree = "<group>"; };
+		FAE6DE3C204C5C1E00ABC510 /* JSONParsingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsingService.swift; sourceTree = "<group>"; };
+		FAE6DE3E204C7A0000ABC510 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +192,7 @@
 				81493580204B0CC80090B9A3 /* QuizView.swift */,
 				814935AC204C51090090B9A3 /* QuestionView.swift */,
 				814935AE204C6A3D0090B9A3 /* ExplanationView.swift */,
-				814935B2204CB28C0090B9A3 /* PopoutTransportation.swift */,
+				81BB4BA1204CCB27002AAE5C /* PopoutTransportation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,8 +210,10 @@
 			isa = PBXGroup;
 			children = (
 				81493595204B0F9D0090B9A3 /* School.swift */,
+				FAE6DE3E204C7A0000ABC510 /* Quiz.swift */,
 				8149359B204B0FF70090B9A3 /* Question.swift */,
 				FA2201CA204B36F7006A5895 /* Answer.swift */,
+				FAE6DE3C204C5C1E00ABC510 /* JSONParsingService.swift */,
 				8149359F204B10F30090B9A3 /* AppError.swift */,
 				814935A3204B5A300090B9A3 /* StyleSheet.swift */,
 			);
@@ -216,6 +226,7 @@
 				814935A5204B78B10090B9A3 /* Storage */,
 				81493597204B0FC30090B9A3 /* NetworkHelper.swift */,
 				81493599204B0FD40090B9A3 /* SchoolAPIClient.swift */,
+				FAE6DE3A204B830500ABC510 /* QuestionJSON.json */,
 				8149359D204B101F0090B9A3 /* QuestionService.swift */,
 			);
 			path = Services;
@@ -324,6 +335,7 @@
 			files = (
 				81493563204B04870090B9A3 /* LaunchScreen.storyboard in Resources */,
 				FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */,
+				FAE6DE3B204B830600ABC510 /* QuestionJSON.json in Resources */,
 				81493560204B04870090B9A3 /* Assets.xcassets in Resources */,
 				81BB4B9D204CA004002AAE5C /* Main.storyboard in Resources */,
 			);
@@ -431,13 +443,15 @@
 				8149358B204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift in Sources */,
 				814935A0204B10F30090B9A3 /* AppError.swift in Sources */,
 				8149358F204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift in Sources */,
-				814935B3204CB28C0090B9A3 /* PopoutTransportation.swift in Sources */,
+				81BB4BA2204CCB27002AAE5C /* PopoutTransportation.swift in Sources */,
 				81493581204B0CC80090B9A3 /* QuizView.swift in Sources */,
 				8149359C204B0FF70090B9A3 /* Question.swift in Sources */,
 				81493559204B04870090B9A3 /* AppDelegate.swift in Sources */,
 				8149359A204B0FD40090B9A3 /* SchoolAPIClient.swift in Sources */,
 				814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */,
+				FAE6DE3F204C7A0000ABC510 /* Quiz.swift in Sources */,
 				81493571204B05070090B9A3 /* SchoolDirectoryVC.swift in Sources */,
+				FAE6DE3D204C5C1E00ABC510 /* JSONParsingService.swift in Sources */,
 				814935AB204C4FE60090B9A3 /* QuestionVC.swift in Sources */,
 				81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */,
 			);
@@ -570,6 +584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PNZ44GM75Q;
 				INFOPLIST_FILE = StepUpNYC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -586,6 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PNZ44GM75Q;
 				INFOPLIST_FILE = StepUpNYC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
