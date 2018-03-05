@@ -24,7 +24,7 @@ struct Answer: Codable {
     }
     
     // convert into data model
-    init(questionId: String, isCorrect: Bool, text: String) {
+    init(questionId: String?, isCorrect: Bool, text: String) {
         self.questionId = questionId
         self.isCorrect = isCorrect
         self.text = text
