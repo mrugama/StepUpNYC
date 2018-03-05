@@ -40,6 +40,8 @@
 		814935A9204B78E60090B9A3 /* StorageService+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A8204B78E60090B9A3 /* StorageService+Images.swift */; };
 		814935AB204C4FE60090B9A3 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AA204C4FE60090B9A3 /* QuestionVC.swift */; };
 		814935AD204C51090090B9A3 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AC204C51090090B9A3 /* QuestionView.swift */; };
+		814935AF204C6A3D0090B9A3 /* ExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AE204C6A3D0090B9A3 /* ExplanationView.swift */; };
+		814935B3204CB28C0090B9A3 /* PopoutTransportation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935B2204CB28C0090B9A3 /* PopoutTransportation.swift */; };
 		81BB4B9D204CA004002AAE5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BB4B9C204CA004002AAE5C /* Main.storyboard */; };
 		81BB4BA0204CA086002AAE5C /* SchoolDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB4B9F204CA086002AAE5C /* SchoolDetailVC.swift */; };
 		81BB4BA2204CCB27002AAE5C /* PopoutTransportation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB4BA1204CCB27002AAE5C /* PopoutTransportation.swift */; };
@@ -86,6 +88,9 @@
 		814935A8204B78E60090B9A3 /* StorageService+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageService+Images.swift"; sourceTree = "<group>"; };
 		814935AA204C4FE60090B9A3 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		814935AC204C51090090B9A3 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		814935AE204C6A3D0090B9A3 /* ExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationView.swift; sourceTree = "<group>"; };
+		814935B2204CB28C0090B9A3 /* PopoutTransportation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoutTransportation.swift; sourceTree = "<group>"; };
+
 		81BB4B9C204CA004002AAE5C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		81BB4B9F204CA086002AAE5C /* SchoolDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetailVC.swift; sourceTree = "<group>"; };
 		81BB4BA1204CCB27002AAE5C /* PopoutTransportation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoutTransportation.swift; sourceTree = "<group>"; };
@@ -186,6 +191,7 @@
 				81BB4B9E204CA027002AAE5C /* DetailViewsProgrammatic */,
 				81493580204B0CC80090B9A3 /* QuizView.swift */,
 				814935AC204C51090090B9A3 /* QuestionView.swift */,
+				814935AE204C6A3D0090B9A3 /* ExplanationView.swift */,
 				81BB4BA1204CCB27002AAE5C /* PopoutTransportation.swift */,
 			);
 			path = Views;
@@ -427,6 +433,7 @@
 				8149357D204B07E30090B9A3 /* SchoolDirectoryView.swift in Sources */,
 				814935A2204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift in Sources */,
 				8149359E204B101F0090B9A3 /* QuestionService.swift in Sources */,
+				814935AF204C6A3D0090B9A3 /* ExplanationView.swift in Sources */,
 				81493585204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift in Sources */,
 				81493587204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift in Sources */,
 				8149357B204B05B20090B9A3 /* TabBarController.swift in Sources */,
