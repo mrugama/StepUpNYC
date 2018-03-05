@@ -22,6 +22,7 @@ struct Question: Codable {
         self.text = value?["text"] as? String ?? ""
         self.explanation = value?["explanation"] as? String ?? ""
         self.imageURL = value?["imageURL"] as? String ?? ""
+        self.answers = value?["answers"] as? [Answer] ?? []
     }
     
     // convert into data model
@@ -29,6 +30,7 @@ struct Question: Codable {
         self.text = text
         self.explanation = explanation
         self.imageURL = imageURL ?? ""
+        self.answers = []
     }
     
     // convert into JSON format
