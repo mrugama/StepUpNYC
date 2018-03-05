@@ -40,6 +40,9 @@
 		814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A3204B5A300090B9A3 /* StyleSheet.swift */; };
 		FA2201CB204B36F7006A5895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2201CA204B36F7006A5895 /* Answer.swift */; };
 		FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2201CC204B389D006A5895 /* GoogleService-Info.plist */; };
+		FAE6DE3B204B830600ABC510 /* QuestionJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = FAE6DE3A204B830500ABC510 /* QuestionJSON.json */; };
+		FAE6DE3D204C5C1E00ABC510 /* JSONParsingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6DE3C204C5C1E00ABC510 /* JSONParsingService.swift */; };
+		FAE6DE3F204C7A0000ABC510 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6DE3E204C7A0000ABC510 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2201CA204B36F7006A5895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		FA2201CC204B389D006A5895 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAE6DE3A204B830500ABC510 /* QuestionJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionJSON.json; sourceTree = "<group>"; };
+		FAE6DE3C204C5C1E00ABC510 /* JSONParsingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsingService.swift; sourceTree = "<group>"; };
+		FAE6DE3E204C7A0000ABC510 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,8 +197,10 @@
 			isa = PBXGroup;
 			children = (
 				81493595204B0F9D0090B9A3 /* School.swift */,
+				FAE6DE3E204C7A0000ABC510 /* Quiz.swift */,
 				8149359B204B0FF70090B9A3 /* Question.swift */,
 				FA2201CA204B36F7006A5895 /* Answer.swift */,
+				FAE6DE3C204C5C1E00ABC510 /* JSONParsingService.swift */,
 				8149359F204B10F30090B9A3 /* AppError.swift */,
 				814935A3204B5A300090B9A3 /* StyleSheet.swift */,
 			);
@@ -204,6 +212,7 @@
 			children = (
 				81493597204B0FC30090B9A3 /* NetworkHelper.swift */,
 				81493599204B0FD40090B9A3 /* SchoolAPIClient.swift */,
+				FAE6DE3A204B830500ABC510 /* QuestionJSON.json */,
 				8149359D204B101F0090B9A3 /* QuestionService.swift */,
 			);
 			path = Services;
@@ -289,6 +298,7 @@
 			files = (
 				81493563204B04870090B9A3 /* LaunchScreen.storyboard in Resources */,
 				FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */,
+				FAE6DE3B204B830600ABC510 /* QuestionJSON.json in Resources */,
 				81493560204B04870090B9A3 /* Assets.xcassets in Resources */,
 				8149355E204B04870090B9A3 /* Main.storyboard in Resources */,
 			);
@@ -393,7 +403,9 @@
 				81493559204B04870090B9A3 /* AppDelegate.swift in Sources */,
 				8149359A204B0FD40090B9A3 /* SchoolAPIClient.swift in Sources */,
 				814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */,
+				FAE6DE3F204C7A0000ABC510 /* Quiz.swift in Sources */,
 				81493571204B05070090B9A3 /* SchoolDirectoryVC.swift in Sources */,
+				FAE6DE3D204C5C1E00ABC510 /* JSONParsingService.swift in Sources */,
 				81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
