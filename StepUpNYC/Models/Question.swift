@@ -13,6 +13,8 @@ struct Question: Codable {
     let text: String?
     let explanation: String?
     let imageURL: String?
+    let answers: [Answer]?
+
     
     // Data from Firebase
     init(snapShot: DataSnapshot) {
