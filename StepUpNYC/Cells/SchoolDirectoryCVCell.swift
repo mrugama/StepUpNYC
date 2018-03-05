@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import expanding_collection
 
 class SchoolDirectoryCVCell: UICollectionViewCell {
 

@@ -14,10 +14,11 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         let schoolDirNav = UINavigationController(rootViewController: SchoolDirectoryVC())
         let quizNav = UINavigationController(rootViewController: QuizVC())
+        let resourcesNav = UINavigationController(rootViewController: ResourcesVC())
         schoolDirNav.tabBarItem = UITabBarItem(title: "Directory", image: #imageLiteral(resourceName: "icoDirectory"), tag: 0)
         quizNav.tabBarItem = UITabBarItem(title: "Quiz", image: #imageLiteral(resourceName: "icoQuiz"), tag: 1)
-        
-        let tabList = [schoolDirNav, quizNav]
+        resourcesNav.tabBarItem = UITabBarItem(title: "Resources", image: #imageLiteral(resourceName: "icoInfo"), tag: 2)
+        let tabList = [schoolDirNav, quizNav, resourcesNav]
         viewControllers = tabList
     }
 }

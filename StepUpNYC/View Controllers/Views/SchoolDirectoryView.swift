@@ -10,7 +10,13 @@ import UIKit
 import SnapKit
 import expanding_collection
 
+protocol SchoolDirectoryViewDelegate: class {
+    func didSelectSchool(_ view: SchoolDirectoryView, school: School)
+}
+
 class SchoolDirectoryView: UIView {
+    
+    weak var delegate: SchoolDirectoryViewDelegate?
 
     let cellSpacing: CGFloat = 20.0
     var schools = [School]() {
@@ -23,10 +29,10 @@ class SchoolDirectoryView: UIView {
     
     lazy var schoolCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         cv.register(SchoolDirectoryCVCell.self, forCellWithReuseIdentifier: "SchoolCell")
-        cv.backgroundColor = Color.blue
+        cv.backgroundColor = UIColor.clear
         return cv
     }()
     
@@ -36,6 +42,7 @@ class SchoolDirectoryView: UIView {
         schoolCollectionView.delegate = self
         schoolCollectionView.dataSource = self
         loadData()
+
     }
     
     private func loadData() {

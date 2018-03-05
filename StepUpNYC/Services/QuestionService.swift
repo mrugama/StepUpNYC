@@ -9,39 +9,48 @@
 import UIKit
 import FirebaseDatabase
 
-//struct QuestionService {
-//    private init() {
-//        dbRef = Database.database().reference()
-//        questionRef = dbRef
-//        answerRef = questionRef.child("answers")
-//    }
-//    static let manager = QuestionService()
-//    private let dbRef: DatabaseReference
-//    private let questionRef: DatabaseReference
-//    private let answerRef: DatabaseReference
-//    
-////    func getQuestion(completion: @escaping ([Question]) -> Void) {
-////        let ref = questionRef
-////        ref.observe(.value) { (snapShots) in
-////            var questions = [Question]()
-////            for value in snapShots.children {
-////                let newQ = Question(snapShot: value as! DataSnapshot)
-////                questions.append(newQ)
-////            }
-////            completion(questions)
-////            }
-////
-////        }
-//    
-////    func saveQuestion(text: String, explanation: String, image: UIImage?, answers: [Answer]) {
-////        let ref = Database.database().reference().child("questions")
-////        let questionRef = ref.childByAutoId()
-////        let newQ = Question(text: text, explanation: explanation, imageURL: nil)
-////        questionRef.setValue(newQ.toAnyObject())
-////        let newA = ref.child(questionRef.ref.key).child("answers").childByAutoId()
-////        for answer in answers {
-////            newA.setValue(answer.toAnyObject())
-////        }
-//    
-//}
 
+class QuestionService {
+    private init(){
+        self.dbRef = Database.database().reference()
+        self.qRef = dbRef.child("questions")
+        self.aRef = dbRef.child("answer")
+    }
+    
+    static let manager = QuestionService()
+    private var dbRef: DatabaseReference!
+    private var qRef: DatabaseReference!
+    private var aRef: DatabaseReference!
+    
+
+    func saveQuestion(_ question : Question,_ answer: Answer,_ image: UIImage?) {
+        let newQuestion = qRef.childByAutoId()
+        let newAnswer = aRef.childByAutoId()
+        let question = Question(text: question.text!, explanation: question.explanation!, imageURL: "")
+        let answer = Answer(questionId: newQuestion.ref.key, isCorrect: answer.isCorrect!, text: answer.text!)
+        newQuestion.setValue(question.toAnyObj())
+        newAnswer.setValue(answer.toAnyObj())
+    }
+    
+    func getQuestion(completion: @escaping ([Question]) -> Void) {
+        qRef.observe(.value) { (snapShot) in
+            var questions = [Question]()
+            for child in snapShot.children {
+                let question = Question(snapShot: child as! DataSnapshot)
+                questions.append(question)
+            }
+            completion(questions)
+        }
+    }
+    
+    func getAnswers(completion: @escaping ([Answer]) -> Void) {
+        aRef.observe(.value) { (snapShot) in
+            var answers = [Answer]()
+            for child in snapShot.children {
+                let answer = Answer(snapShot: child as! DataSnapshot)
+                answers.append(answer)
+            }
+            completion(answers)
+        }
+    }
+}

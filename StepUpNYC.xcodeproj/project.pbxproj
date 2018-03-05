@@ -10,7 +10,6 @@
 		37A48132D89EE6C24300752E /* Pods_StepUpNYC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3B145AF618E08F58320988 /* Pods_StepUpNYC.framework */; };
 		81493559204B04870090B9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493558204B04870090B9A3 /* AppDelegate.swift */; };
 		8149355B204B04870090B9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149355A204B04870090B9A3 /* ViewController.swift */; };
-		8149355E204B04870090B9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8149355C204B04870090B9A3 /* Main.storyboard */; };
 		81493560204B04870090B9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8149355F204B04870090B9A3 /* Assets.xcassets */; };
 		81493563204B04870090B9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81493561204B04870090B9A3 /* LaunchScreen.storyboard */; };
 		81493571204B05070090B9A3 /* SchoolDirectoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493570204B05070090B9A3 /* SchoolDirectoryVC.swift */; };
@@ -21,7 +20,6 @@
 		8149357D204B07E30090B9A3 /* SchoolDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149357C204B07E30090B9A3 /* SchoolDirectoryView.swift */; };
 		8149357F204B07F90090B9A3 /* DetailSchoolDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */; };
 		81493581204B0CC80090B9A3 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493580204B0CC80090B9A3 /* QuizView.swift */; };
-		81493583204B0CDF0090B9A3 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493582204B0CDF0090B9A3 /* ResourcesView.swift */; };
 		81493585204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */; };
 		81493587204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */; };
 		81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */; };
@@ -38,6 +36,12 @@
 		814935A0204B10F30090B9A3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149359F204B10F30090B9A3 /* AppError.swift */; };
 		814935A2204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */; };
 		814935A4204B5A300090B9A3 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A3204B5A300090B9A3 /* StyleSheet.swift */; };
+		814935A7204B78CD0090B9A3 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A6204B78CD0090B9A3 /* StorageService.swift */; };
+		814935A9204B78E60090B9A3 /* StorageService+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935A8204B78E60090B9A3 /* StorageService+Images.swift */; };
+		814935AB204C4FE60090B9A3 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AA204C4FE60090B9A3 /* QuestionVC.swift */; };
+		814935AD204C51090090B9A3 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814935AC204C51090090B9A3 /* QuestionView.swift */; };
+		81BB4B9D204CA004002AAE5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BB4B9C204CA004002AAE5C /* Main.storyboard */; };
+		81BB4BA0204CA086002AAE5C /* SchoolDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB4B9F204CA086002AAE5C /* SchoolDetailVC.swift */; };
 		FA2201CB204B36F7006A5895 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2201CA204B36F7006A5895 /* Answer.swift */; };
 		FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2201CC204B389D006A5895 /* GoogleService-Info.plist */; };
 		FAE6DE3B204B830600ABC510 /* QuestionJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = FAE6DE3A204B830500ABC510 /* QuestionJSON.json */; };
@@ -50,7 +54,6 @@
 		81493555204B04870090B9A3 /* StepUpNYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepUpNYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81493558204B04870090B9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8149355A204B04870090B9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8149355D204B04870090B9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8149355F204B04870090B9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81493562204B04870090B9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81493564204B04870090B9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +65,6 @@
 		8149357C204B07E30090B9A3 /* SchoolDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDirectoryView.swift; sourceTree = "<group>"; };
 		8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryView.swift; sourceTree = "<group>"; };
 		81493580204B0CC80090B9A3 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
-		81493582204B0CDF0090B9A3 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryImageView.swift; sourceTree = "<group>"; };
 		81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryKeyInfoView.swift; sourceTree = "<group>"; };
 		81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSchoolDirectoryGeneralInfo.swift; sourceTree = "<group>"; };
@@ -79,6 +81,12 @@
 		8149359F204B10F30090B9A3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SchoolDirectoryView+Delegates.swift"; sourceTree = "<group>"; };
 		814935A3204B5A300090B9A3 /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
+		814935A6204B78CD0090B9A3 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		814935A8204B78E60090B9A3 /* StorageService+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageService+Images.swift"; sourceTree = "<group>"; };
+		814935AA204C4FE60090B9A3 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
+		814935AC204C51090090B9A3 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		81BB4B9C204CA004002AAE5C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		81BB4B9F204CA086002AAE5C /* SchoolDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolDetailVC.swift; sourceTree = "<group>"; };
 		82678BE68983F7DF364A37AC /* Pods-StepUpNYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.release.xcconfig"; sourceTree = "<group>"; };
 		E6CBAC7A7B9ADB08A620C330 /* Pods-StepUpNYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepUpNYC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2201CA204B36F7006A5895 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -145,8 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				81493558204B04870090B9A3 /* AppDelegate.swift */,
+				81BB4B9C204CA004002AAE5C /* Main.storyboard */,
 				8149355A204B04870090B9A3 /* ViewController.swift */,
-				8149355C204B04870090B9A3 /* Main.storyboard */,
 				8149355F204B04870090B9A3 /* Assets.xcassets */,
 				81493561204B04870090B9A3 /* LaunchScreen.storyboard */,
 			);
@@ -156,12 +164,14 @@
 		8149356B204B04B10090B9A3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				81BB4B9F204CA086002AAE5C /* SchoolDetailVC.swift */,
 				8149356C204B04BA0090B9A3 /* Views */,
 				8149357A204B05B20090B9A3 /* TabBarController.swift */,
 				81493570204B05070090B9A3 /* SchoolDirectoryVC.swift */,
 				81493572204B051B0090B9A3 /* DetailSchoolDirectoryVC.swift */,
 				81493574204B05390090B9A3 /* QuizVC.swift */,
 				81493576204B05570090B9A3 /* ResourcesVC.swift */,
+				814935AA204C4FE60090B9A3 /* QuestionVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -171,15 +181,9 @@
 			children = (
 				8149357C204B07E30090B9A3 /* SchoolDirectoryView.swift */,
 				814935A1204B17490090B9A3 /* SchoolDirectoryView+Delegates.swift */,
-				8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */,
-				81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */,
-				81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */,
-				8149358E204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift */,
-				81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */,
-				8149358A204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift */,
-				8149358C204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift */,
+				81BB4B9E204CA027002AAE5C /* DetailViewsProgrammatic */,
 				81493580204B0CC80090B9A3 /* QuizView.swift */,
-				81493582204B0CDF0090B9A3 /* ResourcesView.swift */,
+				814935AC204C51090090B9A3 /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +214,7 @@
 		8149356F204B04CB0090B9A3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				814935A5204B78B10090B9A3 /* Storage */,
 				81493597204B0FC30090B9A3 /* NetworkHelper.swift */,
 				81493599204B0FD40090B9A3 /* SchoolAPIClient.swift */,
 				FAE6DE3A204B830500ABC510 /* QuestionJSON.json */,
@@ -224,6 +229,29 @@
 				81493593204B0F090090B9A3 /* SchoolDirectoryCVCellView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		814935A5204B78B10090B9A3 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				814935A6204B78CD0090B9A3 /* StorageService.swift */,
+				814935A8204B78E60090B9A3 /* StorageService+Images.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		81BB4B9E204CA027002AAE5C /* DetailViewsProgrammatic */ = {
+			isa = PBXGroup;
+			children = (
+				8149357E204B07F90090B9A3 /* DetailSchoolDirectoryView.swift */,
+				81493584204B0D890090B9A3 /* DetailSchoolDirectoryImageView.swift */,
+				81493586204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift */,
+				8149358E204B0E8A0090B9A3 /* DetailSchoolDirectoryKeyInfoTransportationsView.swift */,
+				81493588204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift */,
+				8149358A204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift */,
+				8149358C204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift */,
+			);
+			path = DetailViewsProgrammatic;
 			sourceTree = "<group>";
 		};
 		D04821CD7B5B546844443EBB /* Frameworks */ = {
@@ -300,7 +328,7 @@
 				FA2201CD204B389D006A5895 /* GoogleService-Info.plist in Resources */,
 				FAE6DE3B204B830600ABC510 /* QuestionJSON.json in Resources */,
 				81493560204B04870090B9A3 /* Assets.xcassets in Resources */,
-				8149355E204B04870090B9A3 /* Main.storyboard in Resources */,
+				81BB4B9D204CA004002AAE5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,20 +360,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StepUpNYC/Pods-StepUpNYC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FAQView/FAQView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
 				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FAQView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -378,7 +410,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8149355B204B04870090B9A3 /* ViewController.swift in Sources */,
+				814935A9204B78E60090B9A3 /* StorageService+Images.swift in Sources */,
 				81493575204B05390090B9A3 /* QuizVC.swift in Sources */,
+				81BB4BA0204CA086002AAE5C /* SchoolDetailVC.swift in Sources */,
+				814935AD204C51090090B9A3 /* QuestionView.swift in Sources */,
 				81493577204B05570090B9A3 /* ResourcesVC.swift in Sources */,
 				FA2201CB204B36F7006A5895 /* Answer.swift in Sources */,
 				81493596204B0F9D0090B9A3 /* School.swift in Sources */,
@@ -393,7 +428,7 @@
 				81493587204B0DBB0090B9A3 /* DetailSchoolDirectoryKeyInfoView.swift in Sources */,
 				8149357B204B05B20090B9A3 /* TabBarController.swift in Sources */,
 				8149357F204B07F90090B9A3 /* DetailSchoolDirectoryView.swift in Sources */,
-				81493583204B0CDF0090B9A3 /* ResourcesView.swift in Sources */,
+				814935A7204B78CD0090B9A3 /* StorageService.swift in Sources */,
 				8149358D204B0E6A0090B9A3 /* DetailSchoolDirectoryStatisticsView.swift in Sources */,
 				8149358B204B0E1B0090B9A3 /* DetailSchoolDirectoryRequirementsView.swift in Sources */,
 				814935A0204B10F30090B9A3 /* AppError.swift in Sources */,
@@ -406,6 +441,7 @@
 				FAE6DE3F204C7A0000ABC510 /* Quiz.swift in Sources */,
 				81493571204B05070090B9A3 /* SchoolDirectoryVC.swift in Sources */,
 				FAE6DE3D204C5C1E00ABC510 /* JSONParsingService.swift in Sources */,
+				814935AB204C4FE60090B9A3 /* QuestionVC.swift in Sources */,
 				81493589204B0DF30090B9A3 /* DetailSchoolDirectoryGeneralInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,14 +449,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8149355C204B04870090B9A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8149355D204B04870090B9A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		81493561204B04870090B9A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -546,7 +574,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StepUpNYC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.c4q.nyc.StepUpNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,7 +590,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StepUpNYC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ac.c4q.nyc.StepUpNYC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

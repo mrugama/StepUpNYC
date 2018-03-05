@@ -18,21 +18,18 @@ class SchoolDirectoryVC: UIViewController {
         super.viewDidLoad()
         setupView()
         configVC()
+        schoolDirectory.delegate = self
+        view.verticalGradientLayer(topColor: Color.white, bottomColor: Color.blue)
     }
     
     private func configVC() {
-        navigationController?.navigationBar.barTintColor = Color.lightRed
+        navigationController?.navigationBar.barTintColor = Color.white
         navigationController?.navigationBar.tintColor = Color.white
         tabBarController?.tabBar.barTintColor = Color.red
         tabBarController?.tabBar.tintColor = Color.white
-        let titleLabel = UILabel()
-        titleLabel.textAlignment = .center
-        titleLabel.textColor = Color.white
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
-        //UIFont(name: "Arial", size: 32)
-        
-        titleLabel.text = "SHSAT 411"
-        navigationItem.titleView = titleLabel
+        let titleImage = UIImageView()
+        titleImage.image = #imageLiteral(resourceName: "stepUpLogoSmall")
+        navigationItem.titleView = titleImage
         navigationController?.navigationBar.isTranslucent = true
     }
 
@@ -41,5 +38,15 @@ class SchoolDirectoryVC: UIViewController {
         schoolDirectory.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view.safeAreaLayoutGuide.snp.edges)
         }
+    }
+}
+
+extension SchoolDirectoryVC: SchoolDirectoryViewDelegate {
+    func didSelectSchool(_ view: SchoolDirectoryView, school: School) {
+        
+        let detailVC = SchoolDetailVC.storyboardInstance()
+        detailVC.school = school
+        
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
